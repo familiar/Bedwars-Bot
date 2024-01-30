@@ -18,7 +18,9 @@ Also make sure your hotbar layout is set to this:
 
 ![Hotbar](https://github.com/familiar/Bedwars-Bot/assets/136278435/0d550fa2-8734-4a4b-b409-8d3235456e59)
 
-THE BOT WILL NOT WORK CORRECTLY WITHOUT THESE SETUP!
+/// THE BOT WILL NOT WORK CORRECTLY WITHOUT THESE SETUP!
+
+- Keyboard
 
 # FAQ
 Feel free to re-code or recreate my bot. You could also recode it in different languages, I don't mind. 

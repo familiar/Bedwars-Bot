@@ -17,6 +17,8 @@ P.S: I ran it 24/7. It can basically go infinitely without a ban. I stopped runn
 # Questions
 Why didn't you add PVP?
 - I did add pvp. I added a function to make the bot strafe and w-tap to fight if enemies were near. It was a bit too blatant/obvious though, so I removed it. Maybe someone else could make it?
+What is the "Extra Stuff" folder?
+- It's the old pvp function I added. It's kind of pieced together and unfinished, so don't bother with it. Just added it for fun, recreate it if you want.
 
 # Getting Started
 1. First, download and extract this repository.

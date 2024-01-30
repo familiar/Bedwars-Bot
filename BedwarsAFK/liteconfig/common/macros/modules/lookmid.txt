@@ -1,4 +1,0 @@
-@#yaw=CALCYAWTO(0,0)
-@#realyaw=%@#yaw%+180
-
-looks(%@#realyaw%,0,0.5);

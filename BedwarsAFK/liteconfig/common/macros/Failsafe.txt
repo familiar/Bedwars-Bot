@@ -13,12 +13,12 @@ foreach(teams);
     next;
     if(&currentlocation == "Lobby");
     stop(start)
-    echo("/nick random")
+    // echo("/nick random")
     exec(start.txt,start)
 
 endif;
    if(&currentlocation == "Island")
     stop(start)
-    echo("/nick random")
+    // echo("/nick random")
     exec(start.txt,start)
     endif;

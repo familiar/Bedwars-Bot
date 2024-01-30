@@ -1,0 +1,15 @@
+pick(iron_ingot)
+do
+key(use)
+key(use)
+key(use)
+key(use)
+key(use)
+key(use)
+key(use)
+key(use)
+key(use)
+key(use)
+key(use)
+key(use)
+loop

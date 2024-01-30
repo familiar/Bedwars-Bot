@@ -1,0 +1,38 @@
+@&teammate1 = "";
+@&teammate2 = "";
+@&teammate3 = "";
+
+foreach("entities(filters:[{type:player}])");
+    if((%ENTITYNAME% != %@&yourign%) && (%ENTITYNAME% != %PLAYER%) && (%ENTITYDISTANCE% <= 10) && (%ENTITYHELMETID% == "leather_helmet"));
+      if((%ENTITYNAME% != %@&teammate2%) && %ENTITYNAME% != %@&teammate3%));
+        @&teammate1 = %ENTITYNAME%;
+      endif;
+    endif;
+    next;
+endif;
+
+foreach("entities(filters:[{type:player}])");
+    if((%ENTITYNAME% != %@&yourign%) && (%ENTITYNAME% != %PLAYER%) && (%ENTITYDISTANCE% <= 10) && (%ENTITYHELMETID% == "leather_helmet"));
+      if((%ENTITYNAME% != %@&teammate1%) && (%ENTITYNAME% != %@&teammate3%));
+        @&teammate2 = %ENTITYNAME%;
+      endif;
+    endif;
+    next;
+endif;
+
+foreach("entities(filters:[{type:player}])");
+    if((%ENTITYNAME% != %@&yourign%) && (%ENTITYNAME% != %PLAYER%) && (%ENTITYDISTANCE% <= 10) && (%ENTITYHELMETID% == "leather_helmet"));
+      if((%ENTITYNAME% != %@&teammate1%) && (%ENTITYNAME% != %@&teammate2%));
+        @&teammate3 = %ENTITYNAME%;
+      endif;
+    endif;
+    next;
+endif;
+
+log("&f[&cBW&f] Full Team: &7%@&yourign% | %@&teammate1% | %@&teammate2% | %@&teammate3%")
+
+
+
+
+
+

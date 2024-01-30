@@ -1,0 +1,2 @@
+log("&f[&cBW&f] Stopped Bot")
+stop(all)

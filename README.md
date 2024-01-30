@@ -1,6 +1,10 @@
 # Bedwars-Bot
 A Bedwars Bot made for Hypixel, compatibility with Fours and Dreams modes. Has resource sharing, defense, failsafes, and requeuing. Coded in Macro / Keybind mod for 1.12.2 Liteloader + Forge. 
 
+# Important Notes
+- USE at your own risk. I am not responsible if you are punished.
+- Even though I was NEVER banned using this bot, me publicing this code will probably lead to it's patch.
+
 # Getting Started
 1. First, download and extract this repository.
 2. Open the "Dependencies" folder, and install forge 1.12.2 if not installed already. (Make sure you have the Minecraft launcher installed).

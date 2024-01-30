@@ -1,0 +1,264 @@
+#
+# macros.txt
+# This file stores the macro definitions, parameters and options for mod_macros
+#
+
+# Version number of the mod which saved this file. ***Do not alter this value!***
+version=1540
+
+#
+# Settings
+#
+
+autocraft.failed.popup=1
+
+# Set to 1 to enable the chat filter module
+chatfilter.enabled=1
+
+# True to enable custom (designable) GUI in the chat screen
+chatgui.enabled=1
+
+# Set this to the colour code format used by your server
+colourcodeformat=&%s
+
+# Use 0 to disable or -1 to use the MACRO OVERRIDE key
+colourcodehelperkey=0
+
+# Compiler flags, CASE SENSITIVE. Only change this if you know what you're doing
+compiler.flags=
+
+# Maximum number of file includes which can be inserted during a single compiler iteration
+compiler.maxincludes=10
+
+# Enable automatically switching to configurations which match the server address upon joining a new game
+config.autoswitch=1
+
+# The name of the configuration to select at startup, still overridden by config.autoswitch if enabled
+config.initial=
+
+# Enable per-config friends list, setting this to 0 uses a single list for all configurations
+configs.enable.friends=0
+
+# Enable per-config homes list, setting this to 0 uses a single list for all configurations
+configs.enable.homes=0
+
+# Enable per-config places list, setting this to 0 uses a single list for all configurations
+configs.enable.places=0
+
+# Enable per-config presets list, setting this to 0 uses a single list for all configurations
+configs.enable.presets=0
+
+# Enable per-config towns list, setting this to 0 uses a single list for all configurations
+configs.enable.towns=0
+
+# Enable per-config warps list, setting this to 0 uses a single list for all configurations
+configs.enable.warps=0
+
+# Enables on-screen debugging information to help diagnose problems with the mod
+debug.enabled=0
+
+# Displays all environment variables on the HUD when debugging is enabled and the minecraft debug info is visible. WARNING THIS CAN DESTROY YOUR FRAMERATE, USE WITH CAUTION
+debug.environment.enabled=0
+
+# Includes all KEY_ environment variables in the environment variable display
+debug.environment.keys=0
+
+discover.commandhomelist=/listhomes
+discover.commandtownlist=/town list
+discover.commandwarplist=/warp
+discover.commandwarplistpage=/warp %s
+discover.enabled=1
+discover.homecountregex=^\xa7[0-9a-f]Home\(s\) : \xa7[0-9a-f]([0-9]+)
+discover.responsetimeticks=60
+discover.townregex=\xa7[0-9a-f]([a-zA-Z0-9\.\_\-]+)\xa7[0-9a-f] \[[0-9]+\]\xa7[0-9a-f]
+discover.waitforhomecount=1
+discover.warpignoreregex=^\xa7c
+discover.warppageregex=^\xa77.+?page [0-9]+ of ([0-9]+)
+
+# True if the text editor should use dark colour scheme instead of the default
+editor.colours.dark=0
+
+# True if the text editor should display context-sensitive help popups
+editor.help.enabled=1
+
+# Set which action the editor will take when the minimise button is clicked. Valid options are "save", "nosave" or blank to always prompt
+editor.minimiseprompt=
+
+# True if the text editor should enable syntax highlighting
+editor.syntax.enabled=1
+
+# Serialised version of the event layout, each param is {MappingID,X,Y}
+events.layout={1000,6,4}{1001,6,24}{1002,6,44}{1003,6,64}{1004,6,84}{1005,6,104}{1006,6,124}{1007,6,144}{1008,6,164}{1009,145,4}{1010,145,24}{1011,145,44}{1012,145,64}{1013,145,84}{1014,145,104}{1015,145,124}{1016,145,144}{1017,145,164}{1018,284,4}{1019,284,24}{1020,284,44}
+
+# True to enable the filterable chat functionality
+filterablechat.enabled=0
+
+# Flood protection settings
+floodprotection.behaviour.tickslimit=180
+
+floodprotection.behaviour.ticksmessage=20
+floodprotection.enabled=1
+floodprotection.ignorecommands=0
+floodprotection.queuesize=32
+floodprotection.style=QUEUE
+
+# Enable the slide animation in the macro binding GUI
+gui.animation=1
+
+# True if the keyboard (and event) layouts should be scaled to fit the screen rather than remaining a fixed size
+gui.autoscale=0
+
+# Pressing ENTER or ESC in the MACRO EDIT screen will return to the MACRO BIND screen
+gui.bindafteredit=0
+
+# NORMAL, DIRECT or DISABLED. Configures the action of the MACRO ACTIVATE key binding
+gui.bindingmode=NORMAL
+
+# Allows pressing a key to enter binding mode from any page of macro binding GUI, including events and buttons
+gui.bindonanypage=0
+
+# By default the config name banner now shows the configs dropdown, enable this setting to use the old behaviour
+gui.configname.linkstosettings=0
+
+# Display the results of a conditional macro expression interactively within the conditional macro GUI
+gui.liveconditional=1
+
+gui.optionsfirst=0
+
+# Remember which binding page was used last when opening the binding GUI, otherwise always starts with the KEYS screen
+gui.rememberpage=1
+
+# True to display the old style large copy, move and delete buttons in the binding screen
+gui.showlargebuttons=0
+
+# Show the slot IDs when hovering over container slots. Useful if you need to figure out which slots are which
+gui.showslotids=1
+
+gui.simple=0
+gui.textboxhighlight.enabled=1
+
+# Show the chat history in the 'Macro Parameter' screens
+guiparams.chathistory=1
+
+# Mapping of ASCII values to LWJGL key codes, this is used by the key event pump to supply key codes for pumped characters
+input.charmap={34,3}{35,40}{32,57}{33,2}{38,8}{39,41}{36,5}{37,6}{42,9}{40,10}{41,11}{46,52}{47,53}{44,51}{45,12}{51,4}{50,3}{49,2}{48,11}{55,8}{54,7}{53,6}{52,5}{59,39}{58,39}{57,10}{56,9}{63,53}{62,52}{61,13}{60,51}{68,32}{69,18}{70,33}{71,34}{64,41}{65,30}{66,48}{67,46}{76,38}{77,50}{78,49}{79,24}{72,35}{73,23}{74,36}{75,37}{85,22}{84,20}{87,17}{86,47}{81,16}{80,25}{83,31}{82,19}{93,27}{92,43}{95,12}{94,7}{89,21}{88,45}{91,26}{90,44}{102,33}{103,34}{100,32}{101,18}{98,48}{99,46}{97,30}{110,49}{111,24}{108,38}{109,50}{106,36}{107,37}{104,35}{105,23}{119,17}{118,47}{117,22}{116,20}{115,31}{114,19}{8962,53}{113,16}{112,25}{126,40}{125,27}{124,43}{123,26}{122,44}{121,21}{120,45}
+
+# Enable the compatibility mode key interception. Use this if the enhanced key capture mode is causing issues with other mods.
+input.compatibilitymode.enabled=0
+
+input.debounce.enabled=1
+
+# Minimum number of game ticks that must elapse before a template can be retriggered
+input.debounce.ticks=10
+
+# Disable the deep injection proxy. This proxy enables more reliable key event injection but can cause the game to crash with certain mods.
+input.deepinjection.disabled=0
+
+# Keys which will require MACRO OVERRIDE to function as macro keys
+input.keys.reserved=68,59,61,62
+
+keyboard.colour.bound=#FFFF00
+keyboard.colour.boundspecial=#FFAA00
+keyboard.colour.denied=#FF0000
+keyboard.colour.global=#00FF00
+keyboard.colour.reserved=#880000
+keyboard.colour.selected=#FFFFFF
+keyboard.colour.unbound=#404040
+
+# 0 to disable layout editing, 1 to enable the 'edit' button
+keyboard.editable=0
+
+# Overrides for some keys in the display, specifies alternate text for the key
+keyboard.labels={1,ESC}{12,-}{13,=}{14,<-}{26,[}{27,]}{28,RTN}{29,CTRL}{39,;}{40,#}{41,'}{42,#}{43,\}{51,,}{52,.}{53,/}{54,#}{55,[*]}{56,ALT}{58,CAPS}{69,NUM}{70,SCRL}{71,[7]}{72,[8]}{73,[9]}{74,[-]}{75,[4]}{76,[5]}{77,[6]}{78,[+]}{79,[1]}{80,[2]}{81,[3]}{82,[0]}{83,[.]}{156,ENT}{157,CTRL}{181,[/]}{200,#}{201,PGUP}{203,#}{205,#}{207,END}{208,#}{209,PGDN}{210,INS}{211,DEL}
+
+# Serialised version of the keyboard layout, each param is {MappingID,X,Y}
+keyboard.layout={1,20,4}{2,36,24}{3,56,24}{4,76,24}{5,96,24}{6,116,24}{7,136,24}{8,156,24}{9,176,24}{10,196,24}{11,216,24}{12,236,24}{13,256,24}{14,288,24}{15,16,40}{16,44,40}{17,64,40}{18,84,40}{19,104,40}{20,124,40}{21,144,40}{22,164,40}{23,184,40}{24,204,40}{25,224,40}{26,244,40}{27,264,40}{28,292,40}{29,20,88}{30,48,56}{31,68,56}{32,88,56}{33,108,56}{34,128,56}{35,148,56}{36,168,56}{37,188,56}{38,208,56}{39,228,56}{40,268,56}{41,248,56}{42,12,72}{43,36,72}{44,56,72}{45,76,72}{46,96,72}{47,116,72}{48,136,72}{49,156,72}{50,176,72}{51,196,72}{52,216,72}{53,236,72}{54,280,72}{55,368,116}{57,136,88}{58,20,56}{59,48,4}{60,68,4}{61,88,4}{62,108,4}{63,132,4}{64,152,4}{65,172,4}{66,192,4}{67,216,4}{68,240,4}{69,296,116}{70,368,4}{71,296,132}{72,332,132}{73,368,132}{74,404,116}{75,296,148}{76,332,148}{77,368,148}{78,404,132}{79,296,164}{80,332,164}{81,368,164}{82,314,180}{83,368,180}{87,268,4}{88,296,4}{156,404,164}{157,252,88}{181,332,116}{183,332,4}{197,404,4}{199,368,24}{200,368,72}{201,404,24}{203,332,88}{205,404,88}{207,368,40}{208,368,88}{209,404,40}{210,332,24}{211,332,40}{219,56,88}{220,216,88}{248,92,116}{249,92,132}{250,26,108}{251,164,108}{252,168,152}{253,26,152}{254,26,136}
+
+# Overrides for some keys in the display, show an ASCII symbol instead of text
+keyboard.symbols={42,30}{54,30}{156,17}{200,24}{203,27}{205,26}{208,25}{248,24}{249,25}
+
+# If true, then the custom GUI -> slot mappings are loaded from the config at startup, otherwise the defaults are always applied
+layout.bindings.loadatstartup=1
+
+# Item ID/damage values to include in the items list that aren't automatically enumerated, use {id} for base items and {id:damage} for specific damage values
+list.items.include={80}{18:2}
+
+# Base directory for ancilliary macro config files, relative to the Minecraft directory. Use . to use the Minecraft directory (old behaviour)
+macrosdirectory=/liteconfig/common/macros/
+
+# Include self in the 'online users' list ($$u)
+onlineuser.includeself=1
+
+# Number of characters to trim from the END of online user names
+onlineuser.trimchars.end=0
+
+# Number of characters to trim from the START of online user names
+onlineuser.trimchars.start=0
+
+# Saves outbound chat messages generated by the mod to the local chat history. Defaults to false
+output.enablehistory=0
+
+# Enable the config-switched popup when changing configs and imports
+overlay.configpopup.enabled=1
+
+# Enable the auto-crafting status display
+overlay.craftingstatus.enabled=1
+
+# Enable the override function when in the chat GUI, disable if using CTRL
+override.chatgui.enabled=1
+
+# Enable the override function when in the command block GUI, disable if using CTRL
+override.commandblockgui.enabled=1
+
+# Enable the MACRO OVERRIDE function
+override.enabled=1
+
+# True to show only the "simple" MACRO OVERRIDE popup instead of the full prompt bar
+override.simplepopup=1
+
+# Uses standard java formatting string, param 1 is X, 2 is Y and 3 is Z
+place.coordsformat=%1$s %2$s %3$s
+
+# Enable the Console button
+repl.enabled=0
+
+# Enable the 'running macros' display
+runstatus.enabled=1
+
+# Rate limit in ticks for auto-craft slot clicks, defaults to no delay (one action per tick) increasing this value waits the specifed number of ticks between slot actions
+script.craft.ratelimit=0
+
+# Limit the number of instructions that can be processed per macro per tick
+script.run.limitpertick=100
+
+script.run.maxtimesharems=100
+
+# If enabled, items and blocks in the default "minecraft" namespace will be have the minecraft: prefix stripped from their names when returned by script commands or environment variables
+script.stripdefaultnamespace=1
+
+script.trace=0
+
+# True if the script engine should generate warnings for blocked script actions
+script.warn.permissions.enabled=0
+
+#
+# Macros
+#
+
+# KEY_EQUALS
+Macro[13].Macro=$${stop(all)}$$
+
+# KEY_UP
+Macro[200].Macro=$${$$<start.txt>}$$
+
+# EVENT_ONJOINGAME
+Macro[1000].Macro=$${exec(start.txt,start)}$$
+
+# EVENT_ONCHAT
+Macro[1001].Macro=$$<onChat.txt>
+
+# EVENT_ONHEALTHCHANGE
+Macro[1002].Macro=$${exec(damagemonitor.txt,damagemonitor)}$$
+
+# EVENT_ONWORLDCHANGE
+Macro[1005].Macro=$${exec(Failsafe.txt,Failsafe)}$$

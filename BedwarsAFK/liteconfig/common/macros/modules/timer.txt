@@ -1,6 +1,0 @@
-wait(60000ms)
-stop(rc)
-stop(Drop)
-wait(1000ms)
-exec("Purchase.txt","Purchase");
-stop(timer)

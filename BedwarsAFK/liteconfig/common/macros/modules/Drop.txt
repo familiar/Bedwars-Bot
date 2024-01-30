@@ -1,7 +1,0 @@
-do
-FOR(@#i, 2, 7);
-  Slot(%@#i%);
-  Press(Q);
-  wait(1t)
-NEXT
-loop

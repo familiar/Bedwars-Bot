@@ -1,7 +1,0 @@
-// Take a screenshot when game won!
-
-camera(2)
-wait(100ms)
-press(F2)
-wait(100ms)
-camera(0)

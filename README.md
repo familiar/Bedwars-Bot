@@ -17,8 +17,9 @@ P.S: I ran it 24/7. It can basically go infinitely without a ban. I stopped runn
 # Questions
 Why didn't you add PVP?
 - I did add pvp. I added a function to make the bot strafe and w-tap to fight if enemies were near. It was a bit too blatant/obvious though, so I removed it. Maybe someone else could make it?
-What is the "Extra Stuff" folder?
-- It's the old pvp function I added. It's kind of pieced together and unfinished, so don't bother with it. Just added it for fun, recreate it if you want.
+What do the files in the "Extra Stuff" folder do?
+- "Attack", "Pvp", and "Movement", is the old pvp function I added. It's kind of pieced together and unfinished, so don't bother with it. Just added it for fun, recreate it if you want.
+- "Scared", and "Shout": For fun, I used to have the bot shout random lines in the start of a Bedwars game. (Shout.txt). I also had the bot, whenever it purchased iron armor, send a random message from "Scared.txt", telling it's teammates it was scared and was just going to stay at base all game. It was funny because people would actually respond to the bot.
 
 # Getting Started
 1. First, download and extract this repository.

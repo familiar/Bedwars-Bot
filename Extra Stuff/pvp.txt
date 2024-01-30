@@ -1,0 +1,45 @@
+@#scripton = "1";
+
+stop(hit)
+stop(attack)
+stop(movement)
+exec("hit.txt","hit")
+exec("movement.txt","movement")
+exec("attack.txt","attack")
+
+do;
+  unsafe;
+
+@&yourign = "sunsi";
+
+      //Iterating over players at middle that fit the criteria - in middle as specified by vals above
+      foreach("entities(filters:[{type:player}])");
+          @&target = "%ENTITYNAME%";
+          @&targetypos = "%ENTITYYPOS%";
+          @#distancefrom = "%ENTITYDISTANCE%";
+          
+      //If target isnt yourself look at them
+      //I didn't add the teammates names here, but you would also just add like if target != teammate1, etc., then look and attack
+
+          if((%@&target% != %@&yourign%) && (@#distancefrom <= 10) && (%ENTITYHELMETID% == "leather_helmet"));
+            if((%ENTITYNAME% == %@&target%) && (@#distancefrom <= 4));
+              look(%ENTITYYAWFROMPLAYER%,%ENTITYPITCHFROMPLAYER%);
+              break;
+            endif;
+            if((%ENTITYNAME% == %@&target%) && (@#distancefrom > 4));
+              looks(%ENTITYYAWFROMPLAYER%,%ENTITYPITCHFROMPLAYER%,.4);
+              break;
+            endif;
+     	 elseif((%ENTITYNAME% == %@&target%) && (@#distancefrom > 6));
+	    stop(pvp)
+            keyup(forward)
+	    keyup(left)
+	    keyup(right)
+	    stop(damagemonitor)
+          endif;
+        endif;
+      next;
+    endif;
+  endunsafe;
+loop;
+ 

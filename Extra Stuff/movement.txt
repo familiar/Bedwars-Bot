@@ -1,0 +1,18 @@
+// Some of this pvp code is used from someone else. If you're reading this and you know who you are, ;)
+
+unsafe();
+do()
+
+look(%@#yaw%,%@#pitch%)
+			random(#strafe,1000,500);
+			keydown(left)
+			wait(%#strafe%ms)
+			keyup(left)
+			keydown(right)
+			wait(%#strafe%ms)
+			keyup(right)
+			keyup(back)
+			keydown(sprint)
+
+loop
+endunsafe;

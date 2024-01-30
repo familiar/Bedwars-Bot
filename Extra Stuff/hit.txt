@@ -1,0 +1,13 @@
+do()
+	if((%HITID% = -1)||(@#distancefrom <= 3))
+		do()
+			keyup(forward)
+			keydown(back)
+		until(@#distancefrom >= 3)
+			keyup(back)
+			keydown(forward)
+			keydown(sprint)
+	else
+		keydown(forward)
+	endif;
+loop;

@@ -1,0 +1,9 @@
+do
+key(attack)
+key(attack)
+key(attack)
+key(attack)
+key(attack)
+key(attack)
+key(attack)
+loop

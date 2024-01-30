@@ -1,0 +1,32 @@
+@#scripton = "";
+
+if(GUI == "GUIINVENTORY");
+  press(e);
+endif;
+next;
+
+if(%@#scripton% == 1);
+    log("Script is already on.");
+    stop(enemy);
+  endif;
+if(%@#scripton% == 0);
+  stop(timer);
+  stop(rc);
+  stop(Afk);
+  stop(Drop);
+  stop(Teammate);
+  stop(autoclicker);
+  stop(Purchase);
+  stop(chase);
+  stop(Shout);
+  stop(savegencoord);
+  stop(gotogen);
+  stop(walktimer);
+  stop(lookmid);
+  log("Turning script on.");
+  exec("defense.txt","defense")
+  wait(1t)
+  @#scripton = "1";
+endif;
+
+stop(enemy)

@@ -1,0 +1,13 @@
+@#scripton = "";
+if(GUI == "GUIINVENTORY");
+  press(e);
+endif;
+next;
+
+if(HEALTH < %@#prev_health%);
+  exec("enemy.txt","enemy");
+endif;
+
+@#prev_health = HEALTH;
+wait(100ms);
+stop(damagemonitor);

@@ -1,0 +1,21 @@
+press(e)
+wait(1000ms)
+
+if(GUI == "GUIINVENTORY")
+	press(e)
+    endif;
+next;
+
+do;
+    calcyawto(%@&x%,%@&y%,%@&z%,#yaw,#dist,#pitch);
+    inc(#yaw,180);
+    if(#yaw >= 360);
+        dec(#yaw,360);
+    endif;
+    looks(%#yaw%,%#pitch%,1);
+	    keydown(forward)
+	    keydown(left)
+	    wait(200ms)
+	    keyup(left)
+	    wait(1000ms)
+loop;

@@ -1,0 +1,19 @@
+//////////////////////////////////////
+
+//     Configuration & Start File
+
+//////////////////////////////////////
+
+// Replace the IGN in quotations with your IGN
+@&yourign = "sunsi";
+
+//Ignore value, for bot use
+@#prev_health = HEALTH;
+
+log("&f[&cBW&f] Started Bot")
+wait(1t)
+log("&7Open Source - &fProgrammed by Rice")
+wait(100t)
+
+exec("Command.txt","Command")
+wait(25t)

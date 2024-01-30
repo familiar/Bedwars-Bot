@@ -1,0 +1,19 @@
+          log("&f[&cBW&f] Detected Enemy Near")
+          stop(timer);
+	  looks(-%@#realyaw%,80,.5);
+          pick(spawn_egg);
+          key(use);
+          key(use);
+          key(use);
+          wait(1000ms);
+          pick(golden_apple);
+          #applecount = 0;
+          do();
+            key(use);
+            inc(#applecount);
+          until(%#applecount% = 35);
+	  wait(10ms)
+	  exec("rc.txt","rc")
+	  exec("timer.txt","timer")
+	  stop(defense)
+          @#scripton = "0";

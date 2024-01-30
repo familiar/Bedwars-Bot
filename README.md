@@ -28,11 +28,10 @@ Why didn't you add PVP?
 7. Click save, and then run the game.
 
 # In-game Setup
-In game, make sure these are the slots your golden apples, iron golem spawn eggs, and iron armor is set to in the quick-buy:
+In game, make sure these are the slots your golden apples, iron golem spawn eggs, and iron armor is set to in the quick-buy:  
 ![Quickbuy](https://github.com/familiar/Bedwars-Bot/assets/136278435/a324deb5-7780-45ab-b3b3-db5c14f3563e)
 
-Also make sure your hotbar layout is set to this:
-
+Also make sure your hotbar layout is set to this:  
 ![Hotbar](https://github.com/familiar/Bedwars-Bot/assets/136278435/0d550fa2-8734-4a4b-b409-8d3235456e59)
 
 ### THE BOT WILL NOT WORK CORRECTLY WITHOUT THESE SETUP!
@@ -43,4 +42,4 @@ Also make sure your hotbar layout is set to this:
 - You can use 5zig to Auto-Reconnect to the server. Set the delay to 30 seconds for safety.
 
 # FAQ
-Feel free to re-code or recreate my bot. You could also recode it in different languages, I don't mind. There are alot of things that could be improved on to make the bot even better, but I only spent 2-3 days working on it. Never bothered to update it because it was the best Bedwars bot at the time, and the ban-chance was quite literally 0%.
+Feel free to re-code or recreate my bot. You could also recode it in different languages, I don't mind. There are a lot of things that could be improved on to make the bot even better, but I only spent 2-3 days working on it. Never bothered to update it because it was the best Bedwars bot at the time, and the ban-chance was quite literally 0%.

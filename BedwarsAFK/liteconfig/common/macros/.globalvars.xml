@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://eq2online.net/dtd/properties.dtd">
+<properties>
+    <comment>Shared variables store for mod_Macros</comment>
+    <entry key="&amp;targetypos">75</entry>
+    <entry key="#realyaw">286</entry>
+    <entry key="&amp;yourign">sunsi</entry>
+    <entry key="#i">4</entry>
+    <entry key="#yaw">106</entry>
+    <entry key="#shoutcheck">0</entry>
+    <entry key="&amp;target">petitchamane</entry>
+    <entry key="&amp;z">27</entry>
+    <entry key="&amp;y">74+1</entry>
+    <entry key="#distancefrom">2</entry>
+    <entry key="&amp;x">98</entry>
+    <entry key="#scripton">0</entry>
+    <entry key="#pitch">9</entry>
+    <entry key="&amp;teammate3">Magician_Ruben</entry>
+    <entry key="&amp;teammate2">petitchamane</entry>
+    <entry key="&amp;teammate1">ythm0713</entry>
+    <entry key="#prev_health">20</entry>
+</properties>

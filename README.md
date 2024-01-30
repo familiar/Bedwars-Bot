@@ -15,6 +15,7 @@ In game, make sure these are the slots your golden apples, iron golem spawn eggs
 ![Quickbuy](https://github.com/familiar/Bedwars-Bot/assets/136278435/a324deb5-7780-45ab-b3b3-db5c14f3563e)
 
 Also make sure your hotbar layout is set to this:
+
 ![Hotbar](https://github.com/familiar/Bedwars-Bot/assets/136278435/0d550fa2-8734-4a4b-b409-8d3235456e59)
 
 THE BOT WILL NOT WORK CORRECTLY WITHOUT THESE SETUP!

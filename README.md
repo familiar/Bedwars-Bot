@@ -42,4 +42,4 @@ Also make sure your hotbar layout is set to this:
 - You can use 5zig to Auto-Reconnect to the server. Set the delay to 30 seconds for safety.
 
 # FAQ
-Feel free to re-code or recreate my bot. You could also recode it in different languages, I don't mind. 
+Feel free to re-code or recreate my bot. You could also recode it in different languages, I don't mind. There are alot of things that could be improved on to make the bot even better, but I only spent 2-3 days working on it. Never bothered to update it because it was the best Bedwars bot at the time, and the ban-chance was quite literally 0%.

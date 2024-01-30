@@ -4,6 +4,19 @@ A Bedwars Bot made for Hypixel, compatibility with Fours and Dreams modes. Has r
 # Important Notes
 - Even though I was NEVER banned using this bot, me publicing this code will probably lead to it's patch. This is intended to bring attention to the problem so it can be fixed. If you choose to use this and get punished, I am not responsible.
 
+# Why I was NEVER banned
+It isn't hard to bypass Hypixel while botting (I wish staff listened to my suggestions...):
+- First, it would look at teammates at all times, making it look like a non in queue.
+- Any non who sits in generator all game is obviously bad at the game. When I added resource dropping to teammates, I added a look delay. It makes the bot, in replays, look like it's on a trackpad.
+- When it drops resources, it drops one at a time, not full stacks. This makes it look more legit in replays as it'll be constantly dropping resources to nearby teammates at all times. It only drops resources after it has purchased iron armor (this allows it to save for iron golems).
+- It buys iron golems and eats golden apples. Have you seen a bedwars bot do that before?
+
+P.S: I ran it 24/7. It can basically go infinitely without a ban. I stopped running it because my old PC blue-screened from running it for a month straight without any restarts.. Welp.
+
+# Questions
+Why didn't you add PVP?
+- I did add pvp. I added a function to make the bot strafe and w-tap to fight if enemies were near. It was a bit too blatant/obvious though, so I removed it. Maybe someone else could make it?
+
 # Getting Started
 1. First, download and extract this repository.
 2. Open the "Dependencies" folder, and install forge 1.12.2 if not installed already. (Make sure you have the Minecraft launcher installed).

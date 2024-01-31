@@ -31,7 +31,7 @@ Also make sure your hotbar layout is set to this:
 ### What is the "Bedwars Castle Extra Files" folder, and how do I use it?
 This is the old Bedwars Castle function I created. This only works for the "Ivory Castles Map", and it was a very rough draft version, so USE at your own risk!!!
 - To setup, just drag the .txt files in the "Bedwars Castle Extra Files" folder into the "BedwarsAFK/liteconfig/common/macros" folder, replacing the old ones. Should work.
-- It goes to the generators based on spawn side (Red or Blue) and picks up resources.
+- It goes to the generators based on spawn side (Red or Blue) and picks up resources. Then, it banks all of it's collected resources in the banker, using /banker.
 
 ### What is the "Extra Stuff" folder?  
 - "Attack", "Pvp", and "Movement", is the old pvp function I added. It's kind of pieced together and unfinished, so don't bother with it. Just added it for fun, recreate it if you want.

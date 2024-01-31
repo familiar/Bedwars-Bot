@@ -1,31 +1,6 @@
 # Bedwars-Bot
 A Bedwars Bot made for Hypixel, compatibility with Fours and Dreams modes. Has resource sharing, defense, failsafes, and requeuing. Coded in Macro / Keybind mod for 1.12.2 Liteloader + Forge. 
 
-# Important Notes
-- Even though I was NEVER banned using this bot, me publicing this code will probably lead to it's patch. This is intended to bring attention to the problem so it can be fixed. If you choose to use this and get punished, I am not responsible.
-- I was always top 5 daily bedwars XP every day for MONTHS. Gained around <=7 stars a day. It was so obvious...
-- I will NOT be maintaining or updating this bot. However, you can use the discussions tab if you would like to.
-
-# Why I was NEVER banned
-It isn't hard to bypass Hypixel while botting (I wish staff listened to my suggestions...):
-- First, it would look at teammates at all times, making it look like a non in queue.
-- Any non who sits in generator all game is obviously bad at the game. When I added resource dropping to teammates, I added a look delay. It makes the bot, in replays, look like it's on a trackpad.
-- When it drops resources, it drops one at a time, not full stacks. This makes it look more legit in replays as it'll be constantly dropping resources to nearby teammates at all times. It only drops resources after it has purchased iron armor (this allows it to save for iron golems).
-- It buys iron golems and eats golden apples. Have you seen a bedwars bot do that before?
-
-P.S: I ran it 24/7. It can basically go infinitely without a ban. I stopped running it because my old PC blue-screened from running it for a month straight without any restarts.. Welp.
-
-### Ban Status:
-![banstatus](https://github.com/familiar/Bedwars-Bot/assets/136278435/7dd0a19c-c4c3-4941-9a57-d6a659904b94)
-
-# Questions
-### Why didn't you add PVP?
-- I did add pvp. I added a function to make the bot strafe and w-tap to fight if enemies were near. It was a bit too blatant/obvious though, so I removed it. Maybe someone else could make it?
-### What do the files in the "Extra Stuff" folder do?
-- "Attack", "Pvp", and "Movement", is the old pvp function I added. It's kind of pieced together and unfinished, so don't bother with it. Just added it for fun, recreate it if you want.
-- "Scared", and "Shout": For fun, I used to have the bot shout random lines in the start of a Bedwars game. (Shout.txt). I also had the bot, whenever it purchased iron armor, send a random message from "Scared.txt", telling it's teammates it was scared and was just going to stay at base all game. It was funny because people would actually respond to the bot.
-- These files don't work currently, you'll have to implement them yourselves.
-
 # Getting Started
 1. First, download and extract this repository.
 2. Open the "Dependencies" folder, and install forge 1.12.2 if not installed already. (Make sure you have the Minecraft launcher installed).
@@ -49,8 +24,37 @@ Also make sure your hotbar layout is set to this:
 - Press "=" to stop the bot.
 - You can use 5zig to Auto-Reconnect to the server. Set the delay to 30 seconds for safety.
 
-# FAQ
+# Questions
+### Why didn't you add PVP?
+- I did add pvp. I added a function to make the bot strafe and w-tap to fight if enemies were near. It was a bit too blatant/obvious though, so I removed it. Maybe someone else could make it?
+
+### What is the "Bedwars Castle Extra Files" folder, and how do I use it?
+This is the old Bedwars Castle function I created. This only works for the "Ivory Castles Map", and it was a very rough draft version, so USE at your own risk!!!
+- To setup, just drag the .txt files in the "Bedwars Castle Extra Files" folder into the "BedwarsAFK/liteconfig/common/macros" folder, replacing the old ones. Should work.
+- It goes to the generators based on spawn side (Red or Blue) and picks up resources.
+
+### What is the "Extra Stuff" folder?  
+- "Attack", "Pvp", and "Movement", is the old pvp function I added. It's kind of pieced together and unfinished, so don't bother with it. Just added it for fun, recreate it if you want.
+- "Scared", and "Shout": For fun, I used to have the bot shout random lines in the start of a Bedwars game. (Shout.txt). I also had the bot, whenever it purchased iron armor, send a random message from "Scared.txt", telling it's teammates it was scared and was just going to stay at base all game. It was funny because people would actually respond to the bot.
+- These files don't work currently, you'll have to implement them yourselves.
+
+# FAQ & Important Notes
 Feel free to re-code or recreate my bot. You could also recode it in different languages, I don't mind. There are a lot of things that could be improved on to make the bot even better, but I only spent 2-3 days working on it. Never bothered to update it because it was the best Bedwars bot at the time, and the ban-chance was quite literally 0%.
+- Even though I was NEVER banned using this bot, me publicing this code will probably lead to it's patch. This is intended to bring attention to the problem so it can be fixed. If you choose to use this and get punished, I am not responsible.
+- I was always top 5 daily bedwars XP every day for MONTHS. Gained around <=7 stars a day. It was so obvious...
+- I will NOT be maintaining or updating this bot. However, you can use the discussions tab if you would like to.
+
+# Why I was NEVER banned
+It isn't hard to bypass Hypixel while botting (I wish staff listened to my suggestions...):
+- First, it would look at teammates at all times, making it look like a non in queue.
+- Any non who sits in generator all game is obviously bad at the game. When I added resource dropping to teammates, I added a look delay. It makes the bot, in replays, look like it's on a trackpad.
+- When it drops resources, it drops one at a time, not full stacks. This makes it look more legit in replays as it'll be constantly dropping resources to nearby teammates at all times. It only drops resources after it has purchased iron armor (this allows it to save for iron golems).
+- It buys iron golems and eats golden apples. Have you seen a bedwars bot do that before?
+
+P.S: I ran it 24/7. It can basically go infinitely without a ban. I stopped running it because my old PC blue-screened from running it for a month straight without any restarts.. Welp.
+
+### Ban Status:
+![banstatus](https://github.com/familiar/Bedwars-Bot/assets/136278435/7dd0a19c-c4c3-4941-9a57-d6a659904b94)
 
 # Stats
 My bot used to average 5+ normal KDR daily from iron golem spamming. It could usually survive for a while before dying:

@@ -4,7 +4,7 @@ A Bedwars Bot made for Hypixel, compatibility with Fours and Dreams modes. Has r
 # Important Notes
 - Even though I was NEVER banned using this bot, me publicing this code will probably lead to it's patch. This is intended to bring attention to the problem so it can be fixed. If you choose to use this and get punished, I am not responsible.
 - I was always top 5 daily bedwars XP every day for MONTHS. Gained around <=7 stars a day. It was so obvious...
-- I will NOT be maintaining or updating this bot. You can use the discussions tab if you would like to however.
+- I will NOT be maintaining or updating this bot. However, you can use the discussions tab if you would like to.
 
 # Why I was NEVER banned
 It isn't hard to bypass Hypixel while botting (I wish staff listened to my suggestions...):

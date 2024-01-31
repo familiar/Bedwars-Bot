@@ -48,6 +48,6 @@ Also make sure your hotbar layout is set to this:
 Feel free to re-code or recreate my bot. You could also recode it in different languages, I don't mind. There are a lot of things that could be improved on to make the bot even better, but I only spent 2-3 days working on it. Never bothered to update it because it was the best Bedwars bot at the time, and the ban-chance was quite literally 0%.
 
 # Stats
-My bot used to average 5+ normal KDR daily from iron golem spamming:
+My bot used to average 5+ normal KDR daily from iron golem spamming. It could usually survive for a while before dying:
 ![MONTHLY](https://github.com/familiar/Bedwars-Bot/assets/136278435/fe13b261-5ed0-4e70-ae58-e41d55a8dfb4)
 ![sunsi_daily_stats](https://github.com/familiar/Bedwars-Bot/assets/136278435/5045e073-0974-4bc4-916a-f8e8973b44d3)

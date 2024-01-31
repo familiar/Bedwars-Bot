@@ -24,6 +24,7 @@ P.S: I ran it 24/7. It can basically go infinitely without a ban. I stopped runn
 ### What do the files in the "Extra Stuff" folder do?
 - "Attack", "Pvp", and "Movement", is the old pvp function I added. It's kind of pieced together and unfinished, so don't bother with it. Just added it for fun, recreate it if you want.
 - "Scared", and "Shout": For fun, I used to have the bot shout random lines in the start of a Bedwars game. (Shout.txt). I also had the bot, whenever it purchased iron armor, send a random message from "Scared.txt", telling it's teammates it was scared and was just going to stay at base all game. It was funny because people would actually respond to the bot.
+- These files don't work currently, you'll have to implement them yourselves.
 
 # Getting Started
 1. First, download and extract this repository.

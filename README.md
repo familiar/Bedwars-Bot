@@ -28,6 +28,10 @@ Also make sure your hotbar layout is set to this:
 ### Why didn't you add PVP?
 - I did add pvp. I added a function to make the bot strafe and w-tap to fight if enemies were near. It was a bit too blatant/obvious though, so I removed it. Maybe someone else could make it?
 
+### How do I keep my FKDR from dropping / How do I use the bot with dreams modes?
+- Go into the "BedwarsAFK/liteconfig/common/macros" folder, and open the "Command.txt" file. Then, change the command to the current dreams gamemode of the week. Dreams DOES NOT affect FKDR, and only gives XP.
+- If it's castle, I recommend not running the bot (or you could use the castle bot extra files I added, but those are rough draft / only work for the Ivory Castle map.) Use at your own risk!
+
 ### What is the "Bedwars Castle Extra Files" folder, and how do I use it?
 This is the old Bedwars Castle function I created. This only works for the "Ivory Castles Map", and it was a very rough draft version, so USE at your own risk!!!
 - To setup, just drag the .txt files in the "Bedwars Castle Extra Files" folder into the "BedwarsAFK/liteconfig/common/macros" folder, replacing the old ones. Should work.

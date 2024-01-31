@@ -14,7 +14,7 @@ It isn't hard to bypass Hypixel while botting (I wish staff listened to my sugge
 
 P.S: I ran it 24/7. It can basically go infinitely without a ban. I stopped running it because my old PC blue-screened from running it for a month straight without any restarts.. Welp.
 
-###Ban Status:
+### Ban Status:
 ![banstatus](https://github.com/familiar/Bedwars-Bot/assets/136278435/7dd0a19c-c4c3-4941-9a57-d6a659904b94)
 
 # Questions

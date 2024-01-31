@@ -1,0 +1,76 @@
+wait(1000ms);
+calcyawto(101,68,10,#yaw,#dist,#pitch);
+  #pitch = #pitch+5
+  inc(#yaw,180);
+  if(#yaw >= 360);
+    dec(#yaw,360);
+  endif;
+looks(%#yaw%,%#pitch%-10,.3);
+wait(1000ms)
+looks(,10,.3);
+keydown(forward);
+keydown(sprint);
+keydown(jump);
+wait(3000ms);
+keyup(jump);
+
+@&x = %XPOS%;
+@&y = %YPOS%;
+@&z = %ZPOS%;
+
+log("&0&kX&r &cSaved Generator Coordinates. &0&kX");
+log("> &cGen XPOS: %XPOS%");
+log("> &cGen YPOS: %YPOS%");
+log("> &cGen ZPOS: %ZPOS%");
+
+pick(iron_ingot);
+
+do
+exec("resourcegather.txt","resourcegather");
+wait(20000ms)
+keyup(left)
+keyup(right)
+stop(resourcegather)
+keyup(left)
+keyup(right)
+keyup(forward)
+keyup(jump)
+keyup(left)
+keyup(sprint)
+wait(1000ms)
+echo("/banker")
+wait(2000ms)
+slotclick(82,left,true);
+wait(200ms)
+slotclick(83,left,true);
+wait(200ms)
+slotclick(84,left,true);
+wait(200ms)
+slotclick(85,left,true);
+wait(200ms)
+slotclick(86,left,true);
+wait(200ms)
+slotclick(87,left,true);
+wait(200ms)
+slotclick(88,left,true);
+wait(200ms)
+slotclick(89,left,true);
+wait(200ms)
+slotclick(54,left,true);
+wait(200ms)
+slotclick(55,left,true);
+wait(200ms)
+slotclick(56,left,true);
+wait(200ms)
+slotclick(57,left,true);
+wait(200ms)
+slotclick(58,left,true);
+wait(1000ms)
+press(e)
+next;
+loop
+
+
+
+
+

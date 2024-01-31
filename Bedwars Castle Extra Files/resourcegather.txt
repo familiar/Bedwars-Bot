@@ -1,0 +1,11 @@
+do
+  calcyawto(%@&x%,%@&y%,%@&z%,#yaw,#dist,#pitch);
+  #pitch = #pitch+5
+  inc(#yaw,180);
+  if(#yaw >= 360);
+    dec(#yaw,360);
+  endif;
+  looks(%#yaw%,%#pitch%-10,.5);
+  keydown(forward)
+  keydown(sprint);
+loop

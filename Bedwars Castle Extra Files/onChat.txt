@@ -1,0 +1,131 @@
+$${
+ifcontains(%CHATCLEAN%,"Protect your bed")
+	keyup(forward)
+	keyup(left)
+	keyup(back)
+	keyup(jump)
+	keyup(sprint)
+	stop(resourcegather)
+	stop(leftbluerightred)
+	stop(rightblueleftred)
+	stop(middlebasemovement)
+	stop(spawncheck)
+	wait(5000ms)
+	exec("spawncheck.txt","spawncheck");
+endif
+
+
+ifcontains(%CHATCLEAN%,"Found an in-progress")
+	keyup(forward)
+	keyup(left)
+	keyup(back)
+	keyup(jump)
+	keyup(sprint)
+	stop(resourcegather)
+	stop(leftbluerightred)
+	stop(rightblueleftred)
+	stop(middlebasemovement)
+	stop(spawncheck)
+endif
+
+ifcontains(%CHATCLEAN%,"You have been eliminated!")
+	log("&0&kX&r &cYou took a final death. Requeueing. &0&kX")
+	wait(30t)	
+	keyup(forward)
+	keyup(left)
+	keyup(back)
+	keyup(jump)
+	keyup(sprint)
+	stop(resourcegather)
+	stop(leftbluerightred)
+	stop(rightblueleftred)
+	stop(middlebasemovement)
+	stop(spawncheck)
+	exec("Command.txt","Command")
+endif
+
+ifcontains(%CHATCLEAN%,"Reward Summary")
+	echo("gg")
+	log("&0&kX&r &cGame Ended. Requeueing. &0&kX")
+	wait(30t)	
+	keyup(forward)
+	keyup(left)
+	keyup(back)
+	keyup(jump)
+	keyup(sprint)
+	stop(resourcegather)
+	stop(leftbluerightred)
+	stop(rightblueleftred)
+	stop(middlebasemovement)
+	stop(spawncheck)
+	exec("Command.txt","Command")
+endif
+
+ifcontains(%CHATCLEAN%,"Something went wrong")
+	keyup(forward)
+	keyup(left)
+	keyup(back)
+	keyup(jump)
+	keyup(sprint)
+	stop(resourcegather)
+	stop(leftbluerightred)
+	stop(rightblueleftred)
+	stop(middlebasemovement)
+	stop(spawncheck)
+	exec("Command.txt","Command")
+endif
+
+ifcontains(%CHATCLEAN%,"Couldn't connect you")
+	keyup(forward)
+	keyup(left)
+	keyup(back)
+	keyup(jump)
+	keyup(sprint)
+	stop(resourcegather)
+	stop(leftbluerightred)
+	stop(rightblueleftred)
+	stop(middlebasemovement)
+	stop(spawncheck)
+	exec("Command.txt","Command")
+endif
+
+ifcontains(%CHATCLEAN%,"Spam the command")
+	keyup(forward)
+	keyup(left)
+	keyup(back)
+	keyup(jump)
+	keyup(sprint)
+	stop(resourcegather)
+	stop(leftbluerightred)
+	stop(rightblueleftred)
+	stop(middlebasemovement)
+	stop(spawncheck)
+	exec("Command.txt","Command")
+endif
+
+ifcontains(%CHATCLEAN%,"You have respawned!")
+	keyup(forward)
+	keyup(left)
+	keyup(back)
+	keyup(jump)
+	keyup(sprint)
+	stop(resourcegather)
+	stop(leftbluerightred)
+	stop(rightblueleftred)
+	stop(middlebasemovement)
+	stop(spawncheck)
+	wait(5000ms)
+	exec("spawncheck.txt","spawncheck")
+endif
+
+
+ifcontains(%CHATCLEAN%,"You are AFK. Move around to return from AFK.");
+  wait(5);
+  echo(/lobby)
+  look(0,50,0.2);
+  key(attack);
+  wait(1);
+	stop(all)
+  exec(start.txt)
+endif;
+}$$

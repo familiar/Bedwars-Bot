@@ -1,0 +1,5 @@
+log("&0&kX&r &cBedwars Castle Bot V1 &0&kX")
+wait(100t)
+
+exec("Command.txt","Command")
+wait(25t)

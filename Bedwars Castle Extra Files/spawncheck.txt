@@ -1,0 +1,37 @@
+@&color = "";
+
+//Blue bases;
+
+if((%XPOS% == 88) && (%ZPOS% == -138));
+  log("&7[&5Bedwars Castle Bot&7] &fSpawned at left &9Blue Base&f.");
+  @&color = "blue";
+  exec("leftbluerightred.txt","leftbluerightred");
+endif;
+if((%XPOS% == 0) && (%ZPOS% == -177));
+  log("&7[&5Bedwars Castle Bot&7] &fSpawned at middle &9Blue Base&f.");
+  @&color = "blue";
+  exec("middlebasemovement.txt","middlebasemovement");
+endif;
+if((%XPOS% == -88) && (%ZPOS% == -138));
+  log("&7[&5Bedwars Castle Bot&7] &fSpawned at right &9Blue Base&f.");
+  @&color = "blue";
+  exec("rightblueleftred.txt","rightblueleftred");
+endif;
+
+//Red bases;
+
+if((%XPOS% == -88) && (%ZPOS% == 140));
+  log("&7[&5Bedwars Castle Bot&7] &fSpawned at left &cRed Base&f.");
+  @&color = "red";
+  exec("rightblueleftred.txt","rightblueleftred");
+endif;
+if((%XPOS% == 0) && (%ZPOS% == 179));
+  log("&7[&5Bedwars Castle Bot&7] &fSpawned at middle &cRed Base&f.");
+  @&color = "red";
+  exec("middlebasemovement.txt","middlebasemovement");
+endif;
+if((%XPOS% == 88) && (%ZPOS% == 140));
+  log("&7[&5Bedwars Castle Bot&7] &fSpawned at right &cRed Base&f.");
+  @&color = "red";
+  exec("leftbluerightred.txt","leftbluerightred");
+endif;

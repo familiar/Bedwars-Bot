@@ -46,7 +46,7 @@ This is the old Bedwars Castle function I created. This only works for the "Ivor
 Feel free to re-code or recreate my bot. You could also recode it in different languages, I don't mind. There are a lot of things that could be improved on to make the bot even better, but I only spent 2-3 days working on it. Never bothered to update it because it was the best Bedwars bot at the time, and the ban-chance was quite literally 0%.
 - Even though I was NEVER banned using this bot, me publicing this code will probably lead to it's patch. This is intended to bring attention to the problem so it can be fixed. If you choose to use this and get punished, I am not responsible.
 - I was always top 5 daily bedwars XP every day for MONTHS. Gained around <=7 stars a day. It was so obvious...
-- I will NOT be maintaining or updating this bot. However, you can use the discussions tab if you would like to.
+- I will NOT be maintaining or updating this bot myself. However, you can use the discussions tab if you would like to. If I have the time (unlikely), maybe i'll look at the responses and contribute ;)
 
 # Why I was NEVER banned
 It isn't hard to bypass Hypixel while botting (I wish staff listened to my suggestions...):

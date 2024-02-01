@@ -58,7 +58,7 @@ It isn't hard to bypass Hypixel while botting (I wish staff listened to my sugge
 P.S: I ran it 24/7. It can basically go infinitely without a ban. I stopped running it because my old PC blue-screened from running it for a month straight without any restarts.. Welp.
 
 ### Ban Status:
-![banstatus](https://github.com/familiar/Bedwars-Bot/assets/136278435/7dd0a19c-c4c3-4941-9a57-d6a659904b94)
+Banned (Bot was macro/bot checked)
 
 # Stats
 My bot used to average 5+ normal KDR daily from iron golem spamming. It could usually survive for a while before dying:

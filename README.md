@@ -48,7 +48,7 @@ Feel free to re-code or recreate my bot. You could also recode it in different l
 - I was always top 5 daily bedwars XP every day for MONTHS. Gained around <=7 stars a day. It was so obvious...
 - I will NOT be maintaining or updating this bot myself. However, you can use the discussions tab if you would like to. If I have the time, MAYBE i'll look at the responses and contribute...
 
-# Why I was NEVER banned
+# Why I was NEVER* banned
 It isn't hard to bypass Hypixel while botting (I wish staff listened to my suggestions...):
 - First, it would look at teammates at all times, making it look like a non in queue.
 - Any non who sits in generator all game is obviously bad at the game. When I added resource dropping to teammates, I added a look delay. It makes the bot, in replays, look like it's on a trackpad.
@@ -57,8 +57,10 @@ It isn't hard to bypass Hypixel while botting (I wish staff listened to my sugge
 
 P.S: I ran it 24/7. It can basically go infinitely without a ban. I stopped running it because my old PC blue-screened from running it for a month straight without any restarts.. Welp.
 
-### Ban Status:
+### Ban Status (Before Video):
 ![banstatus](https://github.com/familiar/Bedwars-Bot/assets/136278435/7dd0a19c-c4c3-4941-9a57-d6a659904b94)
+
+*Sunsi was banned 1 day after my video was posted. Staff manually banned it (first staff macro-check in bedwars ever) after thousands of people saw the video. Was expected.
 
 # Stats
 My bot used to average 5+ normal KDR daily from iron golem spamming. It could usually survive for a while before dying:

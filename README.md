@@ -3,7 +3,7 @@ A Bedwars Bot made for Hypixel, compatibility with Fours and Dreams modes. Has r
 
 # Getting Started
 ### Video Tutorial (Credit: Toprak1337)
-![Video Tutorial](https://youtu.be/O_39pO7w1F8)
+Link: https://youtu.be/O_39pO7w1F8
 
 1. First, download and extract this repository.
 2. Open the "Dependencies" folder, and install forge 1.12.2 if not installed already. (Make sure you have the Minecraft launcher installed).

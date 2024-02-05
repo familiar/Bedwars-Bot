@@ -8,6 +8,7 @@ A Bedwars Bot made for Hypixel, compatibility with Fours and Dreams modes. Has r
 2. Open the "Dependencies" folder, and install forge 1.12.2 if not installed already. (Make sure you have the Minecraft launcher installed).
 3. Once finished installing, run the liteloader 1.12.2 installer, and click the "Extend from:" dropdown. Click 1.12.2 Forge.
 4. Open the "BedwarsAFK" folder you downloaded, which is inside of the Bedwars-Bot-main folder. Open the "liteconfig" folder, the "common" folder, then the "macros" folder. Open "start.txt", and replace the IGN in quotations with your IGN. Save this file.
+
 4a. This is OPTIONAL, but you can also open "Command.txt" and replace the Bedwars play command with the one you want to queue. If you set it to dreams, your FKDR will not be affected.
 6. Open the Minecraft launcher. You should now have a profile in the Minecraft launcher called "release 1.12.2-LiteLoader1.12.2-1.12.2-forge..". In the top of the launcher, press on installations, then on that installation.
 7. Press on "Browser" for the game directory, and select the "BedwarsAFK" folder, which is inside of the Bedwars-Bot-main folder.

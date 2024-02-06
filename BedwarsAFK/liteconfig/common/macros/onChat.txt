@@ -1,9 +1,9 @@
 $${
 //Togglechat check to ensure people can't make you requeue
-ifcontains(%CHATCLEAN%,"[SHOUT]")
-wait(100ms)
-echo("/togglechat")
-endif
+//ifcontains(%CHATCLEAN%,"[SHOUT]")
+//wait(100ms)
+//echo("/togglechat")
+//endif
 
 ifcontains(%CHATCLEAN%,"Protect your bed")
 	@#shoutcheck = "0"

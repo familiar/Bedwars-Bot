@@ -1,4 +1,10 @@
 $${
+//Togglechat check to ensure people can't make you requeue
+ifcontains(%CHATCLEAN%,"[SHOUT]")
+wait(100ms)
+echo("/togglechat")
+endif
+
 ifcontains(%CHATCLEAN%,"Protect your bed")
 	@#shoutcheck = "0"
 	stop(timer)
@@ -559,6 +565,13 @@ ifcontains(%CHATCLEAN%,"has joined");
 	keyup(back)
 	keyup(left)
 	keyup(right)
+endif;
+
+//Easter egg, remove if you want, but :)
+
+ifcontains(%CHATCLEAN%,"sunsi has joined");
+	wait(100ms)
+	echo("OMG SUNSI IM A FAN")
 endif;
 
 }$$

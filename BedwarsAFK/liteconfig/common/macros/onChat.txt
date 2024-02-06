@@ -570,8 +570,11 @@ endif;
 //Easter egg, remove if you want, but :)
 
 ifcontains(%CHATCLEAN%,"sunsi has joined");
-	wait(100ms)
-	echo("OMG SUNSI IM A FAN")
+	echo("/togglechat")
+	wait(2000ms)
+	echo("OMG SUNSI IM A FAN!")
+	wait(5000ms)
+	echo("/togglechat")
 endif;
 
 }$$

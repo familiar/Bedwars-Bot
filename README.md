@@ -49,6 +49,7 @@ This is the old Bedwars Castle function I created. This only works for the "Ivor
 ### What is the "Extra Stuff" folder?  
 - "Attack", "Pvp", and "Movement", is the old pvp function I added. It's kind of pieced together and unfinished, so don't bother with it. Just added it for fun, recreate it if you want.
 - "Scared", and "Shout": For fun, I used to have the bot shout random lines in the start of a Bedwars game. (Shout.txt). I also had the bot, whenever it purchased iron armor, send a random message from "Scared.txt", telling it's teammates it was scared and was just going to stay at base all game. It was funny because people would actually respond to the bot.
+- "bedwarschestbot.js": A simple bedwars mineflayer.js bot w/ SOCKS5 proxy support. Isn't as advanced as the macromod version, but it deposites resources into team chest, and runs as a command prompt terminal instead of game instance.
 - These files don't work currently, you'll have to implement them yourselves.
 
 # FAQ & Important Notes

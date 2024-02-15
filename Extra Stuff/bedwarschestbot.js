@@ -13,6 +13,7 @@ let totalXP = 0; // Initialize total XP gained
 let chestVisitInterval; // Interval for repeating chest visits
 let generatorPosition;
 let completedGames = 0;
+let totalGames = 0;
 let maxGames = 10;
 
 // Define your proxy settings - SOCKS 5 PROXY
@@ -105,6 +106,7 @@ function createBot() {
 			// Reset all movement states to ensure the bot is stationary
 			bot.clearControlStates(); // This clears any movement/control states, making the bot stationary
 			if (completedGames <= maxGames) {
+				totalGames++;
 				completedGames++;
 				bot.chat('/play bedwars_two_four');
 			} else {
@@ -119,6 +121,7 @@ function createBot() {
 			stopBedwarsActivities(bot);
 			bot.clearControlStates();
 			if (completedGames <= maxGames) {
+				totalGames++;
 				completedGames++;
 				bot.chat('/play bedwars_two_four');
 			} else {
@@ -171,7 +174,7 @@ function stopBedwarsActivities(bot) {
 }
 
 function updateWindowTitle(totalXP) {
-    process.stdout.write(String.fromCharCode(27) + ']0;' + `Total XP Gained: ${totalXP}` + String.fromCharCode(7));
+    process.stdout.write(String.fromCharCode(27) + ']0;' + `Total XP Gained: ${totalXP} Total Games: ${totalGames}` + String.fromCharCode(7));
 }
 
 function updateNearbyPlayers(bot) {

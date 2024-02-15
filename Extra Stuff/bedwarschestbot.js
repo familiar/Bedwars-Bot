@@ -66,7 +66,7 @@ function createBot() {
         await bot.waitForChunksToLoad();
         await sleep(2000);
         bot.chat('/play bedwars_two_four');
-        updateWindowTitle(totalXP);
+        updateWindowTitle(totalXP, totalGames);
     });
 
     bot.on('message', async (message, chatPosition, sender) => {
@@ -135,7 +135,7 @@ function createBot() {
 		} else if (msg.includes('+25 Bed Wars Experience (Time Played)')) {
 			const xpGained = 25; // The XP amount gained from the message
 			totalXP += xpGained; // Add the XP gained to the total
-			updateWindowTitle(totalXP); // Update the command prompt window title with the new total XP
+			updateWindowTitle(totalXP, totalGames); // Update the command prompt window title with the new total XP
 		}
     });
 
@@ -173,7 +173,7 @@ function stopBedwarsActivities(bot) {
     isInteractingWithChest = false; // Reset interaction flag
 }
 
-function updateWindowTitle(totalXP) {
+function updateWindowTitle(totalXP, totalGames) {
     process.stdout.write(String.fromCharCode(27) + ']0;' + `Total XP Gained: ${totalXP} Total Games: ${totalGames}` + String.fromCharCode(7));
 }
 

@@ -110,6 +110,7 @@ function createBot() {
 			} else {
 				bot.quit(); // Quit the existing bot instance
 				await sleep(1800000);
+				completedGames = 0;
 				clearTimeout(reconnectTimeout); // Clear any existing reconnect timeout
 				reconnectTimeout = setTimeout(createBot, 30000);
 			}
@@ -123,6 +124,7 @@ function createBot() {
 			} else {
 				bot.quit(); // Quit the existing bot instance
 				await sleep(1800000);
+				completedGames = 0;
 				clearTimeout(reconnectTimeout); // Clear any existing reconnect timeout
 				reconnectTimeout = setTimeout(createBot, 30000);
 			}

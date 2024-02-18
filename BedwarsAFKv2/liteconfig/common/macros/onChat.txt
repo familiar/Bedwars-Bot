@@ -411,6 +411,12 @@ ifcontains(%CHATCLEAN%,"You are currently playing on Zen Plaza");
 	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
 endif;
 
+ifcontains(%CHATCLEAN%,"You are currently playing on Archway");
+    wait(100ms)
+	@#bridgemap = 0;
+	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
+endif;
+
 //Classic Duels Bot
 ifcontains(%CHATCLEAN%,"Damage dealt");
 	keyup(jump);

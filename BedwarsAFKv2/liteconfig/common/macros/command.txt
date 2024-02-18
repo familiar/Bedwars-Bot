@@ -1,0 +1,27 @@
+wait(5000ms)
+keyup(back)
+keyup(sneak)
+keyup(jump)
+keyup(left)
+keyup(right)
+keyup(forward)
+
+//play messages - will randomly choose a command, 1/10 chance to play classic duels for randomization
+
+&messages[] = "/play bedwars_four_four";
+&messages[] = "/play bedwars_four_four";
+&messages[] = "/play bedwars_four_four";
+&messages[] = "/play bedwars_four_four";
+&messages[] = "/play bedwars_four_four";
+&messages[] = "/play duels_classic_duel";
+&messages[] = "/play bedwars_four_four";
+&messages[] = "/play bedwars_four_four";
+&messages[] = "/play bedwars_four_four";
+&messages[] = "/play bedwars_four_four";
+
+        #messages   = arraysize(&messages[]);
+        #messages   = #messages - 1;
+        random(#message_index,0,%#messages%);
+        &message    = %&messages[%#message_index%]%;
+	wait(1000ms)
+echo(%&message%);

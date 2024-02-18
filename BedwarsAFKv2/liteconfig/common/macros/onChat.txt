@@ -1,0 +1,437 @@
+$${
+	
+//Togglechat check to ensure people can't make you requeue
+
+ifcontains(%CHATCLEAN%,"[SHOUT]")
+wait(100ms)
+echo("/togglechat")
+endif
+
+// Game failsafes
+
+ifcontains(%CHATCLEAN%,"Protect your bed")
+    wait(10ms)
+	exec("bwfirstrush.txt","bwfirstrush")
+endif
+
+ifcontains(%CHATCLEAN%,"You will be afk")
+    stop(bwafk)
+	stop(bwattack)
+	stop(bwdefense)
+	stop(bwdrop)
+	stop(bwfirstrush)
+	stop(bwgotogen)
+	stop(bwhit)
+	stop(bwlookmid)
+	stop(bwpurchase)
+	stop(bwpvp)
+	stop(bwrc)
+	stop(bwstucktimer)
+	stop(bwteammate)
+	stop(bwtimer)
+	stop(classicaddons)
+	stop(classichit)
+	stop(classicmovement)
+	stop(classicpvpbot)
+	wait(500ms)
+	keydown(forward)
+	wait(500ms)
+	keyup(forward)
+	keydown(right)
+	wait(500ms)
+	keyup(right)
+	keydown(left)
+	wait(500ms)
+	keyup(left)
+	keydown(back)
+	wait(500ms)
+	keyup(back)
+	exec("bwgotogen.txt","bwgotogen")
+endif
+
+ifcontains(%CHATCLEAN%,"You have respawned!")
+    stop(bwafk)
+	stop(bwattack)
+	stop(bwdefense)
+	stop(bwdrop)
+	stop(bwfirstrush)
+	stop(bwgotogen)
+	stop(bwhit)
+	stop(bwlookmid)
+	stop(bwpurchase)
+	stop(bwpvp)
+	stop(bwrc)
+	stop(bwstucktimer)
+	stop(bwteammate)
+	stop(bwtimer)
+	stop(classicaddons)
+	stop(classichit)
+	stop(classicmovement)
+	stop(classicpvpbot)
+	@#ironsword = 0;
+    wait(1000ms)
+    exec("bwgotogen.txt","bwgotogen")
+endif
+
+//Item purchase
+
+ifcontains(%CHATCLEAN%,"You purchased Permanent Iron Armor")
+	@#ironarmor = 1;
+	log(%@#ironarmor%)
+endif
+
+ifcontains(%CHATCLEAN%,"You purchased Iron Sword")
+	@#ironsword = 1;
+	log(%@#ironsword%)
+endif
+
+// Other failsafes
+
+ifcontains(%CHATCLEAN%,"You have been eliminated!")
+	log("&f[&cBW&f] Took a final death. Requeuing.")
+    stop(bwafk)
+	stop(bwattack)
+	stop(bwdefense)
+	stop(bwdrop)
+	stop(bwfirstrush)
+	stop(bwgotogen)
+	stop(bwhit)
+	stop(bwlookmid)
+	stop(bwpurchase)
+	stop(bwpvp)
+	stop(bwrc)
+	stop(bwstucktimer)
+	stop(bwteammate)
+	stop(bwtimer)
+	stop(classicaddons)
+	stop(classichit)
+	stop(classicmovement)
+	stop(classicpvpbot)
+    wait(1000ms)
+	exec("Command.txt","Command")
+endif
+
+ifcontains(%CHATCLEAN%,"Your bed was destroyed so you are a spectator!")
+	log("&f[&cBW&f] You rejoined but your bed was broken. Requeueing.")
+    stop(bwafk)
+	stop(bwattack)
+	stop(bwdefense)
+	stop(bwdrop)
+	stop(bwfirstrush)
+	stop(bwgotogen)
+	stop(bwhit)
+	stop(bwlookmid)
+	stop(bwpurchase)
+	stop(bwpvp)
+	stop(bwrc)
+	stop(bwstucktimer)
+	stop(bwteammate)
+	stop(bwtimer)
+	stop(classicaddons)
+	stop(classichit)
+	stop(classicmovement)
+	stop(classicpvpbot)
+    wait(1000ms)
+	exec("Command.txt","Command")
+endif
+
+ifcontains(%CHATCLEAN%,"Reward Summary")
+	echo("gg")
+	wait(100ms)
+	exec("screenshot.txt","screenshot")
+	wait(100ms)
+	log("&f[&cBW&f] Game Ended. Requeueing.")
+    stop(bwafk)
+	stop(bwattack)
+	stop(bwdefense)
+	stop(bwdrop)
+	stop(bwfirstrush)
+	stop(bwgotogen)
+	stop(bwhit)
+	stop(bwlookmid)
+	stop(bwpurchase)
+	stop(bwpvp)
+	stop(bwrc)
+	stop(bwstucktimer)
+	stop(bwteammate)
+	stop(bwtimer)
+	stop(classicaddons)
+	stop(classichit)
+	stop(classicmovement)
+	stop(classicpvpbot)
+    wait(1000ms)
+	exec("command.txt","command")
+endif
+
+ifcontains(%CHATCLEAN%,"Something went wrong")
+    stop(bwafk)
+	stop(bwattack)
+	stop(bwdefense)
+	stop(bwdrop)
+	stop(bwfirstrush)
+	stop(bwgotogen)
+	stop(bwhit)
+	stop(bwlookmid)
+	stop(bwpurchase)
+	stop(bwpvp)
+	stop(bwrc)
+	stop(bwstucktimer)
+	stop(bwteammate)
+	stop(bwtimer)
+	stop(classicaddons)
+	stop(classichit)
+	stop(classicmovement)
+	stop(classicpvpbot)
+    wait(1000ms)
+	exec("command.txt","command")
+endif
+
+ifcontains(%CHATCLEAN%,"Spam the command")
+    stop(bwafk)
+	stop(bwattack)
+	stop(bwdefense)
+	stop(bwdrop)
+	stop(bwfirstrush)
+	stop(bwgotogen)
+	stop(bwhit)
+	stop(bwlookmid)
+	stop(bwpurchase)
+	stop(bwpvp)
+	stop(bwrc)
+	stop(bwstucktimer)
+	stop(bwteammate)
+	stop(bwtimer)
+	stop(classicaddons)
+	stop(classichit)
+	stop(classicmovement)
+	stop(classicpvpbot)
+    wait(1000ms)
+	exec("command.txt","command")
+endif
+
+ifcontains(%CHATCLEAN%,"You are AFK. Move around to return from AFK.");
+  log("&f[&cBW&f] Detected in LIMBO. Restarting.")
+  wait(5);
+  echo(/lobby)
+  look(0,50,0.2);
+  key(attack);
+  wait(1);
+    stop(bwafk)
+	stop(bwattack)
+	stop(bwdefense)
+	stop(bwdrop)
+	stop(bwfirstrush)
+	stop(bwgotogen)
+	stop(bwhit)
+	stop(bwlookmid)
+	stop(bwpurchase)
+	stop(bwpvp)
+	stop(bwrc)
+	stop(bwstucktimer)
+	stop(bwteammate)
+	stop(bwtimer)
+	stop(classicaddons)
+	stop(classichit)
+	stop(classicmovement)
+	stop(classicpvpbot)
+    wait(1000ms)
+  exec("bwstart.txt","bwstart")
+endif;
+
+ifcontains(%CHATCLEAN%,"You were spawned in Limbo.");
+  log("&f[&cBW&f] Detected in LIMBO. Restarting.")
+  wait(5);
+  echo(/lobby)
+  look(0,50,0.2);
+  key(attack);
+  wait(1);
+    stop(bwafk)
+	stop(bwattack)
+	stop(bwdefense)
+	stop(bwdrop)
+	stop(bwfirstrush)
+	stop(bwgotogen)
+	stop(bwhit)
+	stop(bwlookmid)
+	stop(bwpurchase)
+	stop(bwpvp)
+	stop(bwrc)
+	stop(bwstucktimer)
+	stop(bwteammate)
+	stop(bwtimer)
+	stop(classicaddons)
+	stop(classichit)
+	stop(classicmovement)
+	stop(classicpvpbot)
+    wait(1000ms)
+  exec("bwstart.txt","bwstart")
+endif;
+
+ifcontains(%CHATCLEAN%,"A disconnect occured in your connection");
+    stop(all)
+	wait(1000ms)
+  	exec("bwstart.txt","bwstart")
+endif;
+
+//Initial Map Dodge
+
+ifcontains(%CHATCLEAN%,"%@&yourign% has joined");
+    stop(bwafk)
+	stop(bwattack)
+	stop(bwdefense)
+	stop(bwdrop)
+	stop(bwfirstrush)
+	stop(bwgotogen)
+	stop(bwhit)
+	stop(bwlookmid)
+	stop(bwpurchase)
+	stop(bwpvp)
+	stop(bwrc)
+	stop(bwstucktimer)
+	stop(bwteammate)
+	stop(bwtimer)
+	stop(classicaddons)
+	stop(classichit)
+	stop(classicmovement)
+	stop(classicpvpbot)
+	camera(0)
+	keyup(forward)
+	keyup(back)
+	keyup(left)
+	keyup(right)
+	wait(100ms)
+	@#bridgemap = 1;
+	wait(100ms)
+    echo("/map")
+endif;
+
+//Maps to dodge.
+
+ifcontains(%CHATCLEAN%,"You are currently playing on Dreamgrove");
+    wait(100ms)
+	@#bridgemap = 0;
+	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
+endif;
+
+ifcontains(%CHATCLEAN%,"You are currently playing on Nostalgia");
+    wait(100ms)
+	@#bridgemap = 0;
+	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
+endif;
+
+ifcontains(%CHATCLEAN%,"You are currently playing on Lost Temple");
+    wait(100ms)
+	@#bridgemap = 0;
+	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
+endif;
+
+ifcontains(%CHATCLEAN%,"You are currently playing on Tigris");
+    wait(100ms)
+	@#bridgemap = 0;
+	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
+endif;
+
+ifcontains(%CHATCLEAN%,"You are currently playing on Graveship");
+    wait(100ms)
+	@#bridgemap = 0;
+	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
+endif;
+
+ifcontains(%CHATCLEAN%,"You are currently playing on Mystery");
+    wait(100ms)
+	@#bridgemap = 0;
+	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
+endif;
+
+ifcontains(%CHATCLEAN%,"You are currently playing on Jurassic");
+    wait(100ms)
+	@#bridgemap = 0;
+	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
+endif;
+
+ifcontains(%CHATCLEAN%,"You are currently playing on Infinite");
+    wait(100ms)
+	@#bridgemap = 0;
+	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
+endif;
+
+ifcontains(%CHATCLEAN%,"You are currently playing on Kubo");
+    wait(100ms)
+	@#bridgemap = 0;
+	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
+endif;
+
+ifcontains(%CHATCLEAN%,"You are currently playing on Raze");
+    wait(100ms)
+	@#bridgemap = 0;
+	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
+endif;
+
+ifcontains(%CHATCLEAN%,"You are currently playing on Invasion");
+    wait(100ms)
+	@#bridgemap = 0;
+	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
+endif;
+
+ifcontains(%CHATCLEAN%,"You are currently playing on Zen Plaza");
+    wait(100ms)
+	@#bridgemap = 0;
+	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
+endif;
+
+//Classic Duels Bot
+ifcontains(%CHATCLEAN%,"Damage dealt");
+	keyup(jump);
+	keyup(forward);
+	keyup(left);
+	keyup(right);
+	keyup(back);
+	stop(all);
+	echo(gg);
+	wait(50ms);
+	echo(/play duels_classic_duel);
+	stop;
+endif;
+
+ifcontains(%CHATCLEAN%,"Eliminate your opponents");
+	// Execute files
+    stop(bwafk)
+	stop(bwattack)
+	stop(bwdefense)
+	stop(bwdrop)
+	stop(bwfirstrush)
+	stop(bwgotogen)
+	stop(bwhit)
+	stop(bwlookmid)
+	stop(bwpurchase)
+	stop(bwpvp)
+	stop(bwrc)
+	stop(bwstucktimer)
+	stop(bwteammate)
+	stop(bwtimer)
+	stop(classicaddons)
+	stop(classichit)
+	stop(classicmovement)
+	stop(classicpvpbot)
+	keydown(forward)
+	keydown(sprint)
+	keydown(jump)
+	wait(2000ms)
+	exec("classicpvpbot.txt","classicpvpbot")
+    exec("classicaddons.txt","classicaddons")
+    exec("classichit.txt","classichit")
+    exec("classicmovement.txt","classicmovement")
+    wait(1t)
+	stop;
+endif;
+
+// Easter egg! Remove if you want
+ifcontains(%CHATCLEAN%,"sunsi has joined");
+	echo("/togglechat")
+	wait(2000ms)
+	echo("OMG SUNSI IM A FAN!")
+	wait(5000ms)
+	echo("/togglechat")
+endif;
+
+}$$

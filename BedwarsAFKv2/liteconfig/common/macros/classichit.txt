@@ -1,0 +1,22 @@
+
+do()
+	if(@#distancefrom <= 2)
+		pick(iron_sword)
+		do()
+			key(attack)
+			keyup(forward)
+			keydown(back)
+		until(@#distancefrom > 2)
+			key(attack)
+			keydown(forward)
+			keydown(sprint)
+	else
+		key(attack)
+		keydown(forward)
+		ifininv(arrow);
+			@#arrow = 1
+		else
+			@#arrows = 0
+		endif;	
+	endif;
+loop;

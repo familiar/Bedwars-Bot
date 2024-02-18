@@ -1,0 +1,82 @@
+unsafe
+do()
+ifininv(arrow);
+	@#arrow = 1
+else
+	@#arrows = 0
+endif;
+
+// ---------------- //
+// Auto fishing rod // 
+// ---------------- //
+
+if((@#distancefrom >= 4)&&(@#distancefrom <= 6))
+	stop(classichit)
+	keyup(back)
+	keyup(sneak)
+	keydown(forward)
+
+	do()		
+		pick(fishing_rod)
+		key(use)
+		wait(5t)
+		slot(1)
+		wait(400ms)
+	until((@#distancefrom < 5) || (@#distancefrom > 8))
+	exec("classichit.txt","classichit")
+	slot(1)
+endif
+
+if((@#distancefrom >= 7)&&(@#distancefrom <= 15)&&(@#arrow = 1))
+	stop(classichit)
+	pick(bow)
+	@#mode = 1	
+		do();
+			key(use)	
+			if((@#distancefrom < 7) || (@#arrow = 0))
+				break;
+			endif
+
+		until(%BOWCHARGE% = 100)
+		keydown(jump)
+		wait(1t)
+		keyup(jump)
+		@#mode = 0
+	pick(iron_sword)
+	exec("classichit.txt","classichit")
+endif
+
+if(@#distancefrom > 7)
+	keydown(forward)
+	keydown(sprint)
+	keydown(jump)
+	do()
+		keyup(back)
+		keyup(left)
+		keyup(right)
+		stop(classicmovement)
+	until(@#distancefrom < 7)
+	keyup(jump)
+	exec("classicmovement.txt","classicmovement")
+endif;
+
+if(@&item = "bow")
+	stop(classicmovement)
+	do()
+		random(#strafe,1000,500);
+		keydown(left)
+		wait(%#strafe%ms)
+		keyup(left)
+		keydown(right)
+		wait(%#strafe%ms)
+		keyup(right)
+		keyup(back)
+		keydown(sprint)
+	until(@&item != "bow")
+	keyup(left)
+	keyup(right)
+	exec("classicmovement.txt","classicmovement")
+endif
+
+loop
+endunsafe

@@ -1,0 +1,14 @@
+random(#timer,60000,75000);
+wait(%#timer%ms)
+stop(bwrc)
+stop(bwdrop)
+stop(bwlookmid)
+stop(bwafk)
+keyup(right)
+keyup(forward)
+keyup(left)
+keyup(back)
+stop(bwlookmid)
+wait(1000ms)
+exec("bwpurchase.txt","bwpurchase");
+stop(bwtimer)

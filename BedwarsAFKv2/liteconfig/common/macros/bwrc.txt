@@ -1,0 +1,64 @@
+keyup(sneak)
+exec("bwgotogen.txt","bwgotogen");
+exec("bwafk.txt","bwafk");
+@&targetypos = "";
+
+do;
+  unsafe;
+    
+    //Iterating over players at middle that fit the criteria - in middle as specified by vals above;
+    foreach("entities(filters:[{type:player}])");
+      @&target = "%ENTITYNAME%";
+      @&targetypos = "%ENTITYYPOS%";
+      @#distancefrom = "%ENTITYDISTANCE%";
+      
+      //If target isnt yourself look at them;
+      if((%@&target% != %@&yourign%) && (@#distancefrom <= 10) && (%ENTITYHELMETID% == "leather_helmet"));
+        if(((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% == %@&teammate1%) && (%@#distancefrom% < 4)) || ((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% == %@&teammate2%) && (%@#distancefrom% < 4)) || ((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% == %@&teammate3%) && (%@#distancefrom% < 4)));
+          keyup(sneak)
+          stop(bwlookmid)
+          keyup(forward)
+          keyup(back)
+          log("&f[&cBW&f] Dropping Resources to Nearest Teammate. &7(%@&target% | %@#distancefrom% blocks away)")
+          looks(%ENTITYYAWFROMPLAYER%,%ENTITYPITCHFROMPLAYER%,.4);
+          wait(100ms)
+          exec("bwdrop.txt","bwdrop")
+          wait(1500ms)
+          stop(bwdrop)
+          exec("bwlookmid.txt","bwlookmid");
+        endif;
+        if(((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% == %@&teammate1%) && (%@#distancefrom% <= 0)) || ((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% == %@&teammate2%) && (%@#distancefrom% <= 0)) || ((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% == %@&teammate3%) && (%@#distancefrom% <= 0)));
+          keyup(sneak)
+          stop(bwlookmid);
+          keyup(forward)
+          keyup(back)
+          looks(%ENTITYYAWFROMPLAYER%,%ENTITYPITCHFROMPLAYER%,.6);
+          exec("bwlookmid.txt","bwlookmid");
+        endif;
+        if((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% != %@&teammate1%) && (%ENTITYNAME% != %@&teammate2%) && (%ENTITYNAME% != %@&teammate3%) && (%@#distancefrom% <= 6));
+          keyup(sneak)
+          stop(bwlookmid)
+          stop(bwgotogen)
+          stop(bwafk)
+          stop(bwtimer)
+          keyup(forward)
+          keyup(back)
+          log("&f[&cBW&f] Detected Enemy in PVP range")
+          wait(100ms)
+          exec("bwdefense.txt","bwdefense")
+          wait(100ms)
+          stop(bwrc)
+        endif;
+        if((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% != %@&teammate1%) && (%ENTITYNAME% != %@&teammate2%) && (%ENTITYNAME% != %@&teammate3%) && (%@#distancefrom% > 6) && (%@#distancefrom% <= 10));
+          stop(bwlookmid);
+          keyup(forward)
+          keyup(back)
+          log("&f[&cBW&f] Detected Enemy within 7-10 blocks")
+          looks(%ENTITYYAWFROMPLAYER%,%ENTITYPITCHFROMPLAYER%,.2);
+          exec("bwlookmid.txt","bwlookmid");
+        endif;
+      endif;
+    next;
+    endif;
+  endunsafe;
+loop;

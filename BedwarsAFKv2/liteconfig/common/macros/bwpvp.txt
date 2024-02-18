@@ -1,0 +1,49 @@
+stop(bwrc)
+stop(bwdefense)
+stop(bwlookmid)
+stop(bwhit)
+stop(bwattack)
+wait(10ms)
+exec("bwhit.txt","bwhit")
+exec("bwattack.txt","bwattack")
+slot(1)
+stop(bwdefense)
+
+do(10);
+
+@&yourign = "%PLAYER%";
+
+      //Iterating over players at middle that fit the criteria - in middle as specified by vals above
+      foreach("entities(filters:[{type:player}])");
+          @&target = "%ENTITYNAME%";
+          @&targetypos = "%ENTITYYPOS%";
+          @#distancefrom = "%ENTITYDISTANCE%";
+          
+      //If target isnt yourself look at them and attack
+
+          if((%@&target% != %@&yourign%) && (%@#distancefrom% <= 10) && (%ENTITYHELMETID% == "leather_helmet") && (%ENTITYNAME% != %@&teammate1%) && (%ENTITYNAME% != %@&teammate2%) && (%ENTITYNAME% != %@&teammate3%));
+
+            if((%ENTITYNAME% == %@&target%) && (@#distancefrom <= 4));
+              stop(bwrc)
+              stop(bwdefense)
+              stop(bwlookmid)
+              look(%ENTITYYAWFROMPLAYER%,%ENTITYPITCHFROMPLAYER%,.3);
+              break;
+            endif;
+
+            if((%ENTITYNAME% == %@&target%) && (%@#distancefrom% > 4));
+              stop(bwrc)
+              stop(bwdefense)
+              stop(bwlookmid)
+              looks(%ENTITYYAWFROMPLAYER%,%ENTITYPITCHFROMPLAYER%,.2);
+              break;
+            endif;
+
+          endif;
+
+      next;
+
+loop
+
+stop(all)
+exec("bwrc.txt","bwrc")

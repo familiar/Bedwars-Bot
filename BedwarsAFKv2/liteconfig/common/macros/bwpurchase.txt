@@ -1,0 +1,66 @@
+wait(100ms)
+@#yaw=CALCYAWTO(0,0)
+@#realyaw=%@#yaw%+180
+looks(%@#realyaw%,0,0.5);
+wait(300ms)
+keydown(forward)
+keydown(sprint)
+wait(500ms)
+keydown(jump)
+
+do
+foreach("entities(filters:[{type:armor_stand,name:.+ITEM SHOP}])");
+            @#yaw=%ENTITYYAWFROMPLAYER%
+            @#pitch = %ENTITYPITCHFROMPLAYER%
+            look(%@#yaw%,%@#pitch%,.2)
+        key(use)
+        key(use)
+        key(use)
+        keyup(jump)
+next
+//Opens Item shop
+until(GUI == "GUICHEST");
+
+if(%@#ironarmor% == 0)
+slotclick(%@#ironarmorslot%,left,false)
+wait(200ms)
+endif;
+
+wait(200ms)
+
+if((%@#ironsword% == 0) && (%@#ironarmor% == 1))
+slotclick(%@#ironswordslot%,left,false)
+wait(200ms)
+endif;
+
+wait(200ms)
+
+do(3)
+slotclick(%@#gapsslot%,left,false)
+wait(200ms)
+loop
+
+do(3)
+slotclick(%@#dreamdefenderslot%,left,false)
+wait(200ms)
+loop
+
+do;
+press(e)
+wait(500ms)
+until(GUI == "NONE");
+
+do;
+    calcyawto(%@&x%,%@&y%,%@&z%,#yaw,,#pitch)
+    inc(#yaw,180)
+    looks(%#yaw%,%#pitch%,.4)
+    keydown(forward)
+    keydown(sprint)
+    keyup(jump)
+until((%XPOS% == %@&x%) && (%ZPOS% == %@&z%) || (%XPOS% == %@&x%) && (%ZPOS% == %@&z%+1) || (%XPOS% == %@&x%) && (%ZPOS% == %@&z%-1));
+keyup(forward)
+keyup(sprint)
+
+wait(6000ms)
+exec("bwrc.txt","bwrc")
+exec("bwtimer.txt","bwtimer")

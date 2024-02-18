@@ -1,0 +1,9 @@
+do
+  pick(iron_ingot)
+  press(Q);
+  wait(20ms)
+  press(Q);
+  wait(20ms)
+  press(Q);
+  wait(2300ms)
+loop

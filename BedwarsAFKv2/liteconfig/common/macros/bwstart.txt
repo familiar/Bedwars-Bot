@@ -1,0 +1,28 @@
+//////////////////////////////////////
+
+//     Configuration & Start File
+
+//////////////////////////////////////
+
+exec("config.txt","config");
+wait(100ms)
+
+log("&f[&cBW&f] Started Bot")
+wait(1t)
+log("&f[&cBW&f] Logged in as: &7%@&yourign%")
+wait(1t)
+log("&7Version 2 - &fDeveloped by Rice")
+wait(1t)
+log("")
+wait(1t)
+log("&fJoin our &9Discord &ffor support/updates:")
+wait(1t)
+log("")
+wait(1t)
+lograw(["",{"text":">>> CLICK HERE <<<","clickEvent":{"action":"open_url","value":"https://discord.gg/gxHAUGpXbZ"}}])
+wait(1t)
+log("")
+wait(100t)
+
+exec("command.txt","command")
+wait(25t)

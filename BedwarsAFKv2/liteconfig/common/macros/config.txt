@@ -1,0 +1,24 @@
+// ---------------- //
+// User Config // 
+// ---------------- //
+
+//Set the shop slot based on what your item is at
+@#blocksslot = 19;
+@#dreamdefenderslot = 23;
+@#gapsslot = 22;
+@#ironarmorslot = 20;
+@#ironswordslot = 21;
+
+//Nicking feature - if you have MVP++ the bot will run /nick random every time it joins the lobby
+//Set this to 1 if you have ++ and want to use it, 0 if your don't have ++
+@#nicking = 0;
+
+// ---------------- //
+// IGNORE, BOT CONFIG // 
+// ---------------- //
+
+// Will autodetect your ign
+@&yourign = "%PLAYER%";
+
+//Bot use
+@#prev_health = HEALTH;

@@ -1,0 +1,26 @@
+@&targetypos = "";
+
+do;
+  unsafe;
+    
+    //Iterating over players at middle that fit the criteria - in middle as specified by vals above;
+    foreach("entities(filters:[{type:player}])");
+      @&target = "%ENTITYNAME%";
+      @&targetypos = "%ENTITYYPOS%";
+      @#distancefrom = "%ENTITYDISTANCE%";
+      
+      //If target isnt yourself look at them;
+      if((%@&target% != %@&yourign%) && (@#distancefrom <= 7) && (%ENTITYHELMETID% == "leather_helmet"));
+        if(((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% == %@&teammate1%) && (%@#distancefrom% < 4)) || ((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% == %@&teammate2%) && (%@#distancefrom% < 4)) || ((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% == %@&teammate1%) && (%@#distancefrom% < 4)));
+          stop(bwlookmid);
+          looks(%ENTITYYAWFROMPLAYER%,%ENTITYPITCHFROMPLAYER%,.4);
+        endif;
+        if(((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% == %@&teammate1%) && (%@#distancefrom% <= 0)) || ((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% == %@&teammate2%) && (%@#distancefrom% <= 0)) || ((%ENTITYNAME% == %@&target%) && (%ENTITYNAME% == %@&teammate3%) && (%@#distancefrom% <= 0)));
+          stop(bwlookmid);
+          looks(%ENTITYYAWFROMPLAYER%,%ENTITYPITCHFROMPLAYER%,.6);
+        endif;
+      endif;
+    next;
+    endif;
+  endunsafe;
+loop;

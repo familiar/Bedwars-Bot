@@ -1,0 +1,5 @@
+wait(20000ms)
+stop(gotogen)
+keyup(forward)
+log(&f[&cBW&f] Player might be stuck! Walking into the void.)
+keydown(right)

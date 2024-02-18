@@ -1,0 +1,15 @@
+wait(100ms)
+//Goes back to gen
+do;
+    calcyawto(%@&x%,%@&y%,%@&z%,#yaw,,#pitch)
+    inc(#yaw,180)
+    looks(%#yaw%,%#pitch%,.4)
+    keydown(forward)
+    keydown(sprint)
+    keyup(jump)
+until((%XPOS% == %@&x%) && (%ZPOS% == %@&z%) || (%XPOS% == %@&x%) && (%ZPOS% == %@&z%+1) || (%XPOS% == %@&x%) && (%ZPOS% == %@&z%-1));
+keyup(forward)
+keyup(sprint)
+wait(2500ms)
+exec("bwtimer.txt","bwtimer")
+exec("bwlookmid.txt","bwlookmid");

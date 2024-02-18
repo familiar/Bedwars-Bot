@@ -1,0 +1,38 @@
+unsafe;
+foreach(players)
+    if((%PLAYERNAME% != %PLAYER%) && (%ENTITYHELMETID% == "iron_helmet"))
+        @&opponent = %PLAYERNAME%
+    endif
+    next
+do()
+
+    foreach("entities(filter:[{extends:OtherPlayerMP}])");
+        
+        ifmatches(%ENTITYNAME%,"%@&opponent%")
+
+                //if(%YPOS% >= %ENTITYYPOS%)
+                    //@#entityypos = %ENTITYYPOS%-1
+                //elseif(YPOS < %ENTITYYPOS%);
+                    //@#entityypos = %ENTITYYPOS%     
+                //endif
+
+                    @#distancefrom = %ENTITYDISTANCE%
+                            @#oppohealth = %ENTITYHEALTH%
+                            @#yaw=%ENTITYYAWFROMPLAYER%
+                            @#pitch=%ENTITYPITCHFROMPLAYER%
+            //calcyawto(%ENTITYXPOS%,%@#entityypos%,%ENTITYZPOS%,,,@#pitch);
+
+            look(%@#yaw%,%@#pitch%)
+            #ypos=%ENTITYYPOS%
+            @&item = %ENTITYMAINHANDNAME%
+
+            break()
+
+            endif
+
+        endif
+    next
+
+endunsafe   
+loop
+

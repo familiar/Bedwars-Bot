@@ -1,0 +1,195 @@
+//This file is the initial bot rush
+@#ironsword = 0;
+@#ironarmor = 0;
+
+// First, walks back into gen to log gen coords
+do
+getslotitem(2,&item,#howmany,#data,&nbt)
+keydown(back)
+wait(150ms)
+until((%&item% = "iron_ingot") || (%&item% = "gold_ingot"))
+keyup(back)
+
+@&x = %XPOS%;
+@&y = %YPOS%;
+@&z = %ZPOS%;
+
+log("&f[&cBW&f] Saved Generator Coordinates")
+log("&7> Gen XPOS: %XPOS%")
+log("&7> Gen YPOS: %YPOS%")
+log("&7> Gen ZPOS: %ZPOS%")
+
+@&teammate1 = "";
+@&teammate2 = "";
+@&teammate3 = "";
+
+foreach("entities(filters:[{type:player}])");
+    if((%ENTITYNAME% != %@&yourign%) && (%ENTITYNAME% != %PLAYER%) && (%ENTITYDISTANCE% <= 10) && (%ENTITYHELMETID% == "leather_helmet"));
+      if((%ENTITYNAME% != %@&teammate2%) && %ENTITYNAME% != %@&teammate3%));
+        @&teammate1 = %ENTITYNAME%;
+      endif;
+    endif;
+    next;
+endif;
+
+foreach("entities(filters:[{type:player}])");
+    if((%ENTITYNAME% != %@&yourign%) && (%ENTITYNAME% != %PLAYER%) && (%ENTITYDISTANCE% <= 10) && (%ENTITYHELMETID% == "leather_helmet"));
+      if((%ENTITYNAME% != %@&teammate1%) && (%ENTITYNAME% != %@&teammate3%));
+        @&teammate2 = %ENTITYNAME%;
+      endif;
+    endif;
+    next;
+endif;
+
+foreach("entities(filters:[{type:player}])");
+    if((%ENTITYNAME% != %@&yourign%) && (%ENTITYNAME% != %PLAYER%) && (%ENTITYDISTANCE% <= 10) && (%ENTITYHELMETID% == "leather_helmet"));
+      if((%ENTITYNAME% != %@&teammate1%) && (%ENTITYNAME% != %@&teammate2%));
+        @&teammate3 = %ENTITYNAME%;
+      endif;
+    endif;
+    next;
+endif;
+
+log("&f[&cBW&f] Saved Full Team: &7%@&yourign% | %@&teammate1% | %@&teammate2% | %@&teammate3%")
+
+exec("bwteammate.txt","bwteammate")
+
+// Walks to item shop
+wait(5000ms)
+log("&f[&cBW&f] Going to Item Shop")
+stop(bwteammate)
+stop(bwlookmid)
+wait(10ms)
+
+//looking back to mid
+@#yaw=CALCYAWTO(0,0)
+@#realyaw=%@#yaw%+180
+
+looks(%@#realyaw%,0,0.5);
+
+wait(300ms)
+keydown(forward)
+keydown(sprint)
+wait(500ms)
+keydown(jump)
+
+do
+foreach("entities(filters:[{type:armor_stand,name:.+ITEM SHOP}])");
+            @#yaw=%ENTITYYAWFROMPLAYER%
+            @#pitch = %ENTITYPITCHFROMPLAYER%
+            look(%@#yaw%,%@#pitch%,.2)
+        key(use)
+        key(use)
+        key(use)
+        keyup(jump)
+next
+//Opens Item shop
+until(GUI == "GUICHEST");
+
+//Purchases 2 Stacks of Wool From Item Shop
+keyup(forward)
+keyup(sprint)
+keyup(use)
+
+slotclick(%@#blocksslot%,left,false)
+wait(200ms)
+slotclick(%@#blocksslot%,left,false)
+wait(200ms)
+
+//Exits shop
+do;
+press(e)
+wait(500ms)
+until(GUI == "NONE");
+
+//Goes back to gen
+do;
+    calcyawto(%@&x%,%@&y%,%@&z%,#yaw,,#pitch)
+    inc(#yaw,180)
+    looks(%#yaw%,%#pitch%,.4)
+    keydown(forward)
+    keydown(sprint)
+    keyup(jump)
+until((%XPOS% == %@&x%) && (%ZPOS% == %@&z%) || (%XPOS% == %@&x%) && (%ZPOS% == %@&z%+1) || (%XPOS% == %@&x%) && (%ZPOS% == %@&z%-1));
+keyup(forward)
+keyup(sprint)
+
+@#yaw=CALCYAWTO(0,0)
+@#realyaw=%@#yaw%+180
+
+looks(%@#realyaw%,0,0.4);
+
+if(%@#bridgemap% == 1)
+	log("&f[&cBW&f] This is a bridge map. Will bridge on this map.")
+
+  //Once at gen, goes out to start bridging
+  keydown(right)
+  wait(300ms)
+  keyup(right)
+  keydown(forward)
+  keydown(sprint)
+  keydown(jump)
+  wait(2940ms)
+  keyup(forward)
+  keyup(sprint)
+  keyup(jump)
+
+  //Looks down and starts bridging for 20 blocks
+  #currentxpos = %XPOS%
+  #goalxpos = %XPOS%+1
+  looks(%YAW%,80,.5);
+
+  slot(9)
+  keydown(jump)
+
+  do(10)
+  key(use)
+  loop
+
+  keyup(jump)
+  keydown(back)
+  keydown(sneak)
+  keydown(left)
+  wait(180ms)
+  keyup(left)
+  wait(1000ms)
+
+  do(20)
+  key(use)
+  key(use)
+  key(use)
+  keyup(sneak)
+  wait(100ms)
+  keydown(sneak)
+  wait(500ms)
+  loop
+
+  //Looks back into gen and runs back
+  keyup(back)
+  wait(1000ms)
+  keyup(sneak)
+  exec("bwstucktimer.txt","bwstucktimer")
+  do;
+      calcyawto(%@&x%,%@&y%,%@&z%,#yaw,,#pitch)
+      inc(#yaw,180)
+      looks(%#yaw%,%#pitch%,.4)
+      wait(100ms)
+      keydown(forward)
+      keydown(sprint)
+      keydown(jump)
+  until((%XPOS% == %@&x%) && (%ZPOS% == %@&z%) || (%XPOS% == %@&x%) && (%ZPOS% == %@&z%+1) || (%XPOS% == %@&x%) && (%ZPOS% == %@&z%-1));
+  stop(bwstucktimer)
+  keyup(forward)
+  keyup(sprint)
+  keyup(jump)
+
+  @#yaw=CALCYAWTO(0,0)
+  @#realyaw=%@#yaw%+180
+
+  looks(%@#realyaw%,0,0.4);
+endif;
+
+//Done, initial rush complete
+
+exec("bwrc.txt","bwrc")
+exec("bwtimer.txt","bwtimer")

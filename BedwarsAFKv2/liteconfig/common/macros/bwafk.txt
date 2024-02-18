@@ -1,0 +1,11 @@
+DO
+random(#afktimer,5000,7500);
+KEYDOWN("left")
+wait(130ms)
+KEYUP("left")
+wait(%#afktimer%ms)
+KEYDOWN("right")
+wait(130ms)
+KEYUP("right")
+wait(%#afktimer%ms)
+LOOP

@@ -1,0 +1,7 @@
+// Take a screenshot at end of game.
+
+camera(2)
+wait(100ms)
+press(F2)
+wait(100ms)
+camera(0)

@@ -418,16 +418,31 @@ ifcontains(%CHATCLEAN%,"You are currently playing on Archway");
 endif;
 
 //Classic Duels Bot
-ifcontains(%CHATCLEAN%,"Damage dealt");
+ifcontains(%CHATCLEAN%,"Reward Summary");
 	keyup(jump);
 	keyup(forward);
 	keyup(left);
 	keyup(right);
 	keyup(back);
-	stop(all);
-	echo(gg);
-	wait(50ms);
-	echo(/play duels_classic_duel);
+	stop(bwattack)
+	stop(bwdefense)
+	stop(bwdrop)
+	stop(bwfirstrush)
+	stop(bwgotogen)
+	stop(bwhit)
+	stop(bwlookmid)
+	stop(bwpurchase)
+	stop(bwpvp)
+	stop(bwrc)
+	stop(bwstucktimer)
+	stop(bwteammate)
+	stop(bwtimer)
+	stop(classicaddons)
+	stop(classichit)
+	stop(classicmovement)
+	stop(classicpvpbot)
+	wait(1000ms);
+	exec("command.txt","command")
 	stop;
 endif;
 

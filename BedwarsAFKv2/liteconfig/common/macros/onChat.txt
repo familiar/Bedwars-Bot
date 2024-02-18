@@ -96,6 +96,11 @@ ifcontains(%CHATCLEAN%,"You have respawned!")
 	stop(classicmovement)
 	stop(classicpvpbot)
 	@#ironsword = 0;
+	keyup(forward)
+	keyup(left)
+	keyup(right)
+	keyup(back)
+	keyup(sneak)
     wait(1000ms)
     exec("bwgotogen.txt","bwgotogen")
 endif

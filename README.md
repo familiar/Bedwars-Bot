@@ -1,5 +1,10 @@
+<div align="center">
+
+<img src="https://imgur.com/wyfK8va.png" alt="Statsify" style="width: 15%;" />
+
 # Bedwars-Bot
 A Bedwars Bot made for Hypixel, compatibility with Fours and Dreams modes. Has resource sharing, defense, failsafes, and requeuing. Coded in Macro / Keybind mod for 1.12.2 Liteloader + Forge. 
+</div>
 
 # Discord Server
 ### We now have a discord server! If you want to get help, suggest ideas, or collaborate with others, join here:
@@ -54,24 +59,24 @@ Also make sure your hotbar layout is set to this:
 ### What is the "Bedwars Castle Extra Files" folder, and how do I use it?
 This is the old Bedwars Castle function I created. This only works for the "Ivory Castles Map", and it was a very rough draft version, so USE at your own risk!!!
 - To setup, just drag the .txt files in the "Bedwars Castle Extra Files" folder into the "BedwarsAFK/liteconfig/common/macros" folder, replacing the old ones. Should work.
-- It goes to the generators based on spawn side (Red or Blue) and picks up resources. Then, it banks all of it's collected resources in the banker, using /banker.
+- It goes to the generators based on spawn side (Red or Blue) and picks up resources. Then, it banks all of its collected resources in the banker, using /banker.
 
 ### What is the "Extra Stuff" folder?  
 - "Attack", "Pvp", and "Movement", is the old pvp function I added. It's kind of pieced together and unfinished, so don't bother with it. Just added it for fun, recreate it if you want.
-- "Scared", and "Shout": For fun, I used to have the bot shout random lines in the start of a Bedwars game. (Shout.txt). I also had the bot, whenever it purchased iron armor, send a random message from "Scared.txt", telling it's teammates it was scared and was just going to stay at base all game. It was funny because people would actually respond to the bot.
-- "bedwarschestbot.js": A simple bedwars mineflayer.js bot w/ SOCKS5 proxy support. Isn't as advanced as the macromod version, but it deposites resources into team chest, and runs as a command prompt terminal instead of game instance.
+- "Scared", and "Shout": For fun, I used to have the bot shout random lines in the start of a Bedwars game. (Shout.txt). I also had the bot, whenever it purchased iron armor, send a random message from "Scared.txt", telling its teammates it was scared and was just going to stay at base all game. It was funny because people would actually respond to the bot.
+- "bedwarschestbot.js": A simple bedwars mineflayer.js bot w/ SOCKS5 proxy support. Isn't as advanced as the macromod version, but it deposits resources into the team chest and runs as a command prompt terminal instead of a game instance.
 - These files don't work currently, you'll have to implement them yourselves.
 
 # FAQ & Important Notes
 Feel free to re-code or recreate my bot. You could also recode it in different languages, I don't mind. There are a lot of things that could be improved on to make the bot even better, but I only spent 2-3 days working on it. Never bothered to update it because it was the best Bedwars bot at the time, and the ban-chance was quite literally 0%.
-- Even though I was NEVER banned using this bot, me publicing this code will probably lead to it's patch. This is intended to bring attention to the problem so it can be fixed. If you choose to use this and get punished, I am not responsible.
+- Even though I was NEVER banned from using this bot, me publicing this code will probably lead to its patch. This is intended to bring attention to the problem so it can be fixed. If you choose to use this and get punished, I am not responsible.
 - I was always top 5 daily bedwars XP every day for MONTHS. Gained around <=7 stars a day. It was so obvious...
-- I will NOT (maybe) be maintaining or updating this bot myself. However, you can use the discussions tab if you would like to. If I have the time, MAYBE i'll look at the responses and contribute...
+- I will NOT (maybe) be maintaining or updating this bot myself. However, you can use the discussions tab if you would like to. If I have the time, MAYBE I'll look at the responses and contribute...
 
 # Why I was NEVER* banned
 It isn't hard to bypass Hypixel while botting (I wish staff listened to my suggestions...):
 - First, it would look at teammates at all times, making it look like a non in queue.
-- Any non who sits in generator all game is obviously bad at the game. When I added resource dropping to teammates, I added a look delay. It makes the bot, in replays, look like it's on a trackpad.
+- Any non who sits in the generator all game is obviously bad at the game. When I added resource dropping to teammates, I added a look delay. It makes the bot, in replays, look like it's on a trackpad.
 - When it drops resources, it drops one at a time, not full stacks. This makes it look more legit in replays as it'll be constantly dropping resources to nearby teammates at all times. It only drops resources after it has purchased iron armor (this allows it to save for iron golems).
 - It buys iron golems and eats golden apples. Have you seen a bedwars bot do that before?
 

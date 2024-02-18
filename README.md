@@ -8,6 +8,7 @@ A Bedwars Bot made for Hypixel, compatibility with Fours and Dreams modes. Has r
 # Getting Started
 ### Video Tutorial (Credit: Toprak1337): https://youtu.be/O_39pO7w1F8
 
+#### Minecraft Launcher
 1. First, download and extract this repository.
 2. Open the "Dependencies" folder, and install forge 1.12.2 if not installed already. (Make sure you have the Minecraft launcher installed).
 3. Once finished installing, run the liteloader 1.12.2 installer, and click the "Extend from:" dropdown. Click 1.12.2 Forge.
@@ -16,6 +17,15 @@ A Bedwars Bot made for Hypixel, compatibility with Fours and Dreams modes. Has r
 6. Open the Minecraft launcher. You should now have a profile in the Minecraft launcher called "release 1.12.2-LiteLoader1.12.2-1.12.2-forge..". In the top of the launcher, press on installations, then on that installation.
 7. Press on "Browser" for the game directory, and select the "BedwarsAFK" folder, which is inside of the Bedwars-Bot-main folder.
 8. Click save, and then run the game.
+
+#### MultiMC / Prism Launcher
+1. Begin by installing Forge 1.12.2 and LiteLoader. Navigate to "Add Instance," select version 1.12.2, choose Forge as the modloader, then confirm with "OK."
+2. Once the installation is complete, select the instance and click "Edit." Proceed to click "Install Loader," choose LiteLoader, and confirm with "OK."
+3. Thirdly, download and extract this repository.
+4. Open the "BedwarsAFK" folder you downloaded, located within the Bedwars-Bot-main directory. Inside, navigate through the "liteconfig" > "common" > "macros" folders. Open "start.txt," replace the IGN in quotes with your own, and save the file.
+5. This step is OPTIONAL, but you can also customize the play command in "Command.txt" to your preference. Setting it to "dreams" will not affect your FKDR (Final Kill Death Ratio).
+6. Launch Prism Launcher. Select your instance and click "Folder." Then, double-click on ".minecraft" and copy the "liteconfig" and "mods" folders from BedwarsAFK into the ".minecraft" directory.
+7. Finally, launch the game.
 
 # In-game Setup
 In game, make sure these are the slots your golden apples, iron golem spawn eggs, and iron armor is set to in the quick-buy:  

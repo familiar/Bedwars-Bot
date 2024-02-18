@@ -7,12 +7,39 @@ wait(100ms)
 echo("/togglechat")
 endif
 
-// Game failsafes
+// Game triggers
 
 ifcontains(%CHATCLEAN%,"Protect your bed")
     wait(10ms)
 	exec("bwfirstrush.txt","bwfirstrush")
 endif
+
+ifcontains(%CHATCLEAN%,"Bed Wars Lucky Blocks")
+    wait(10ms)
+	exec("bwfirstrush.txt","bwfirstrush")
+endif
+
+ifcontains(%CHATCLEAN%,"Bed Wars Swappage")
+    wait(10ms)
+	exec("bwfirstrush.txt","bwfirstrush")
+endif
+
+ifcontains(%CHATCLEAN%,"Found an in-progress")
+    wait(10ms)
+	exec("bwfirstrush.txt","bwfirstrush")
+endif
+
+ifcontains(%CHATCLEAN%,"Select an ultimate in the store!")
+    wait(10ms)
+	exec("bwfirstrush.txt","bwfirstrush")
+endif
+
+ifcontains(%CHATCLEAN%,"All generators are maxed!")
+    wait(10ms)
+	exec("bwfirstrush.txt","bwfirstrush")
+endif
+
+// Game failsafes
 
 ifcontains(%CHATCLEAN%,"You will be afk")
     stop(bwafk)

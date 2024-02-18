@@ -11,7 +11,7 @@ A Bedwars Bot made for Hypixel, compatibility with Fours and Dreams modes. Has r
 1. First, download and extract this repository.
 2. Open the "Dependencies" folder, and install forge 1.12.2 if not installed already. (Make sure you have the Minecraft launcher installed).
 3. Once finished installing, run the liteloader 1.12.2 installer, and click the "Extend from:" dropdown. Click 1.12.2 Forge.
-4. Open the "BedwarsAFKv2" folder you downloaded, which is inside of the Bedwars-Bot-main folder. Open the "liteconfig" folder, the "common" folder, then the "macros" folder.
+4. Open the "BedwarsAFK" (or BedwarsAFKv2 depending on the version you downloaded) folder, which is inside of the Bedwars-Bot-main folder. Open the "liteconfig" folder, the "common" folder, then the "macros" folder.
 
 ### CONFIGURATION FOR V1
 Open "start.txt", and replace the IGN in quotations with your IGN. Save this file.
@@ -23,12 +23,12 @@ Open "config.txt", and read through it. Replace the shop slots based on your own
    
 6. This is OPTIONAL, but you can also open "command.txt" and replace the Bedwars play command with the one you want to queue. If you set it to dreams, your FKDR will not be affected.
 7. Open the Minecraft launcher. You should now have a profile in the Minecraft launcher called "release 1.12.2-LiteLoader1.12.2-1.12.2-forge..". In the top of the launcher, press on installations, then on that installation.
-8. Press on "Browser" for the game directory, and select the "BedwarsAFKv2" folder, which is inside of the Bedwars-Bot-main folder.
+8. Press on "Browser" for the game directory, and select the "BedwarsAFK" (or BedwarsAFKv2 depending on the version you downloaded) folder, which is inside of the Bedwars-Bot-main folder.
 9. Click save, and then run the game.
 
 # In-game Setup:
 
-### V2 ONLY:
+### IF YOU INSTALLED V2:
 Make sure your hotbar layout is set to this:
 
 ![HotbarV2](https://github.com/familiar/Bedwars-Bot/assets/136278435/43f38063-12c5-4be0-9251-69f64ddae157)
@@ -36,7 +36,7 @@ Make sure your hotbar layout is set to this:
 ### IMPORTANT FOR V2 - IF YOU DO NOT DO THIS, THE BOT WILL BREAK.
 Go into Minecraft settings -> controls, and set auto-jump to OFF.
 
-### V1 ONLY:
+### IF YOU INSTALLED V1:
 Make sure your hotbar layout is set to this:
 
 ![HotbarV1](https://github.com/familiar/Bedwars-Bot/assets/136278435/0d550fa2-8734-4a4b-b409-8d3235456e59)

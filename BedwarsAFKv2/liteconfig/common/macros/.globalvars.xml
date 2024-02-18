@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://eq2online.net/dtd/properties.dtd">
+<properties>
+    <comment>Shared variables store for mod_Macros</comment>
+    <entry key="#realyaw">180</entry>
+    <entry key="&amp;targetdirection">#targetxpos1-#targetxpos2</entry>
+    <entry key="&amp;target">BuNcH_0f_P1x3Ls</entry>
+    <entry key="#targetdirection">0</entry>
+    <entry key="&amp;item">§b§lPlay Again §7(Right Click)</entry>
+    <entry key="#ironswordslot">21</entry>
+    <entry key="#distancefrom">2</entry>
+    <entry key="#ironarmor">0</entry>
+    <entry key="#ironsword">0</entry>
+    <entry key="&amp;targetxpos2">-3</entry>
+    <entry key="&amp;targetxpos1">-5</entry>
+    <entry key="#entityxchange">7106</entry>
+    <entry key="&amp;z">-98</entry>
+    <entry key="&amp;y">72</entry>
+    <entry key="&amp;x">0</entry>
+    <entry key="#prev_health">20</entry>
+    <entry key="#entityxpos2">7106</entry>
+    <entry key="#entityxpos1">7106</entry>
+    <entry key="&amp;yourign">afked</entry>
+    <entry key="#scripton">1</entry>
+    <entry key="#yaw">0</entry>
+    <entry key="#i">5</entry>
+    <entry key="#oppohealth">20</entry>
+    <entry key="#entityypos">68</entry>
+    <entry key="#blocksslot">19</entry>
+    <entry key="#mode">1</entry>
+    <entry key="#arrow">1</entry>
+    <entry key="&amp;bowtarget">bow_duel</entry>
+    <entry key="#bridgemap">0</entry>
+    <entry key="#bowon">0</entry>
+    <entry key="#targetxpos2">3</entry>
+    <entry key="#targetxpos1">-21</entry>
+    <entry key="#pitch">12</entry>
+    <entry key="#ironarmorslot">20</entry>
+    <entry key="&amp;teammate3"/>
+    <entry key="#shoutcheck">0</entry>
+    <entry key="&amp;teammate2">BuNcH_0f_P1x3Ls</entry>
+    <entry key="#gapsslot">22</entry>
+    <entry key="&amp;teammate1">frosty_ra1n</entry>
+    <entry key="&amp;targetypos">73</entry>
+    <entry key="#arrows">0</entry>
+    <entry key="#dreamdefenderslot">23</entry>
+    <entry key="#nicking">0</entry>
+</properties>

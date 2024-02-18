@@ -25,25 +25,25 @@ Open "config.txt", and read through it. Replace the shop slots based on your own
 8. Press on "Browser" for the game directory, and select the "BedwarsAFKv2" folder, which is inside of the Bedwars-Bot-main folder.
 9. Click save, and then run the game.
 
-# In-game Setup
-In game, make sure these are the slots your golden apples, iron golem spawn eggs, and iron armor is set to in the quick-buy:  
-![Quickbuy](https://github.com/familiar/Bedwars-Bot/assets/136278435/a324deb5-7780-45ab-b3b3-db5c14f3563e)
+# In-game Setup:
 
-Also make sure your hotbar layout is set to this:  
-![Hotbar](https://github.com/familiar/Bedwars-Bot/assets/136278435/0d550fa2-8734-4a4b-b409-8d3235456e59)
+### V2 ONLY:
+Make sure your hotbar layout is set to this:
+![HotbarV2](https://github.com/familiar/Bedwars-Bot/assets/136278435/43f38063-12c5-4be0-9251-69f64ddae157)
+
+### V1 ONLY:
+Make sure your hotbar layout is set to this:
+![HotbarV1](https://github.com/familiar/Bedwars-Bot/assets/136278435/0d550fa2-8734-4a4b-b409-8d3235456e59)
+
+In game, make sure these are the slots your golden apples, iron golem spawn eggs, and iron armor is set to in the quick-buy:  
+![QuickbuyV1](https://github.com/familiar/Bedwars-Bot/assets/136278435/a324deb5-7780-45ab-b3b3-db5c14f3563e)
 
 ### Also run /togglechat in game so others cannot abuse your bot and make it requeue. - FIXED in the newer version, reinstall if issue still happening.
-
-### THE BOT WILL NOT WORK CORRECTLY WITHOUT THESE SETUP!
 
 # Usage / Keybinds
 - Press up-arrow to start the bot. (Bot should automatically start on server join though.)
 - Press "=" to stop the bot.
 - You can use 5zig to Auto-Reconnect to the server. Set the delay to 30 seconds for safety.
-
-# Questions
-### Why didn't you add PVP?
-- I did add pvp. I added a function to make the bot strafe and w-tap to fight if enemies were near. It was a bit too blatant/obvious though, so I removed it. Maybe someone else could make it?
 
 ### How do I keep my FKDR from dropping / How do I use the bot with dreams modes?
 - Go into the "BedwarsAFK/liteconfig/common/macros" folder, and open the "Command.txt" file. Then, change the command to the current dreams gamemode of the week. Dreams DOES NOT affect FKDR, and only gives XP.

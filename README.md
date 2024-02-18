@@ -33,7 +33,7 @@ Make sure your hotbar layout is set to this:
 
 ![HotbarV2](https://github.com/familiar/Bedwars-Bot/assets/136278435/43f38063-12c5-4be0-9251-69f64ddae157)
 
-### IMPORTANT FOR V2
+### IMPORTANT FOR V2 - IF YOU DO NOT DO THIS, THE BOT WILL BREAK.
 Go into Minecraft settings -> controls, and set auto-jump to OFF.
 
 ### V1 ONLY:

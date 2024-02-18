@@ -13,10 +13,10 @@ A Bedwars Bot made for Hypixel, compatibility with Fours and Dreams modes. Has r
 3. Once finished installing, run the liteloader 1.12.2 installer, and click the "Extend from:" dropdown. Click 1.12.2 Forge.
 4. Open the "BedwarsAFK" (or BedwarsAFKv2 depending on the version you downloaded) folder, which is inside of the Bedwars-Bot-main folder. Open the "liteconfig" folder, the "common" folder, then the "macros" folder.
 
-### CONFIGURATION FOR V1
+### 5a. CONFIGURATION FOR V1
 Open "start.txt", and replace the IGN in quotations with your IGN. Save this file.
 
-### CONFIGURATION FOR V2
+### 5b. CONFIGURATION FOR V2
 Open "config.txt", and read through it. Replace the shop slots based on your own quickbuy (referencing the image).
 - IF YOU ARE TOO LAZY, just copy the positions of the blocks, iron armor, iron sword, golden apple, and dream defender egg shown in the image into your quickbuy setup.
 ![inventorysetup](https://github.com/familiar/Bedwars-Bot/assets/136278435/852b8003-5717-457b-bd15-8837511a3a27)

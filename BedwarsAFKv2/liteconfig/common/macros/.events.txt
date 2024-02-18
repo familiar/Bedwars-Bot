@@ -1,0 +1,29 @@
+#
+# events.txt
+# This file stores mapping of hookable event names event ID's to event names, DO NOT modify the
+# contents of this file unless you know what you are doing, in fact, not even then since all your
+# event bindings will be messed up if you edit this file, seriously, just don't. Event names are
+# CASE SENSITIVE and event ID's must fall within the defined event ID range.
+#
+
+Event[1015].Name=onShowGui
+Event[1016].Name=onArmourDurabilityChange
+Event[1006].Name=onModeChange
+Event[1012].Name=onWeatherChange
+Event[1002].Name=onHealthChange
+Event[1007].Name=onInventorySlotChange
+Event[1001].Name=onChat
+Event[1009].Name=onXPChange
+Event[1020].Name=onBetterChat
+Event[1008].Name=onOxygenChange
+Event[1003].Name=onFoodChange
+Event[1010].Name=onLevelChange
+Event[1011].Name=onItemDurabilityChange
+Event[1004].Name=onArmourChange
+Event[1017].Name=onAutoCraftingComplete
+Event[1005].Name=onWorldChange
+Event[1014].Name=onPlayerJoined
+Event[1018].Name=onConfigChange
+Event[1000].Name=onJoinGame
+Event[1019].Name=onSendChatMessage
+Event[1013].Name=onPickupItem

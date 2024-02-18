@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<variables>
+    <config name="@default">
+        <!-- KEY_UP -->
+        <template id="200">
+            <int key="currentxpos">1</int>
+            <int key="goalxpos">2</int>
+            <int key="data">0</int>
+            <int key="x">70</int>
+            <int key="dist">0</int>
+            <int key="y">63</int>
+            <int key="z">0</int>
+            <int key="pitch">344</int>
+            <int key="yaw">535</int>
+            <int key="howmany">5</int>
+            <string key="nbt">null</string>
+            <string key="item">iron_ingot</string>
+        </template>
+        <!-- EVENT_ONCHAT -->
+        <template id="1001">
+            <int key="pitch">43</int>
+            <int key="yaw">351</int>
+        </template>
+    </config>
+</variables>

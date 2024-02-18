@@ -119,6 +119,7 @@ keyup(sprint)
 
 looks(%@#realyaw%,0,0.4);
 
+wait(500ms)
 if(%@#bridgemap% == 1)
 	log("&f[&cBW&f] This is a bridge map. Will bridge on this map.")
 
@@ -129,7 +130,7 @@ if(%@#bridgemap% == 1)
   keydown(forward)
   keydown(sprint)
   keydown(jump)
-  wait(2700ms)
+  wait(2900ms)
   keyup(forward)
   keyup(sprint)
   keyup(jump)
@@ -150,7 +151,7 @@ if(%@#bridgemap% == 1)
   keydown(back)
   keydown(sneak)
   keydown(left)
-  wait(180ms)
+  wait(60ms)
   keyup(left)
   wait(1000ms)
 

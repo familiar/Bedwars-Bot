@@ -29,13 +29,16 @@ Open "config.txt", and read through it. Replace the shop slots based on your own
 
 ### V2 ONLY:
 Make sure your hotbar layout is set to this:
+
 ![HotbarV2](https://github.com/familiar/Bedwars-Bot/assets/136278435/43f38063-12c5-4be0-9251-69f64ddae157)
 
 ### V1 ONLY:
 Make sure your hotbar layout is set to this:
+
 ![HotbarV1](https://github.com/familiar/Bedwars-Bot/assets/136278435/0d550fa2-8734-4a4b-b409-8d3235456e59)
 
 In game, make sure these are the slots your golden apples, iron golem spawn eggs, and iron armor is set to in the quick-buy:  
+
 ![QuickbuyV1](https://github.com/familiar/Bedwars-Bot/assets/136278435/a324deb5-7780-45ab-b3b3-db5c14f3563e)
 
 ### Also run /togglechat in game so others cannot abuse your bot and make it requeue. - FIXED in the newer version, reinstall if issue still happening.

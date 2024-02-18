@@ -17,7 +17,8 @@ A Bedwars Bot made for Hypixel, compatibility with Fours and Dreams modes. Has r
 Open "start.txt", and replace the IGN in quotations with your IGN. Save this file.
 
 ### CONFIGURATION FOR V2
-Open "config.txt", and read through it. Replace the shop slots based on your own quickbuy, using this image as reference:
+Open "config.txt", and read through it. Replace the shop slots based on your own quickbuy (referencing the image).
+- IF YOU ARE TOO LAZY, just copy the positions of the blocks, iron armor, iron sword, golden apple, and dream defender egg shown in the image into your quickbuy setup.
 ![inventorysetup](https://github.com/familiar/Bedwars-Bot/assets/136278435/852b8003-5717-457b-bd15-8837511a3a27)
    
 6. This is OPTIONAL, but you can also open "command.txt" and replace the Bedwars play command with the one you want to queue. If you set it to dreams, your FKDR will not be affected.
@@ -31,6 +32,9 @@ Open "config.txt", and read through it. Replace the shop slots based on your own
 Make sure your hotbar layout is set to this:
 
 ![HotbarV2](https://github.com/familiar/Bedwars-Bot/assets/136278435/43f38063-12c5-4be0-9251-69f64ddae157)
+
+### IMPORTANT FOR V2
+Go into Minecraft settings -> controls, and set auto-jump to OFF.
 
 ### V1 ONLY:
 Make sure your hotbar layout is set to this:

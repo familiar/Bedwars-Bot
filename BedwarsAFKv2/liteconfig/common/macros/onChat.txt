@@ -437,6 +437,7 @@ endif;
 // In this map, the bot gets stuck after buying items.
 ifcontains(%CHATCLEAN%,"You are currently playing on Invasion");
     wait(100ms)
+	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
 	log("&f[&cBW&f] This is an broken map. Will requeue.")
 	keyup(jump);
 	keyup(forward);
@@ -464,6 +465,38 @@ ifcontains(%CHATCLEAN%,"You are currently playing on Invasion");
 	exec("command.txt","command")
 	stop;
 endif;
+
+// In this map, the bot gets stuck trying to buy items.
+ifcontains(%CHATCLEAN%,"You are currently playing on Harvesting");
+    wait(100ms)
+	log("&f[&cBW&f] This is an broken map. Will requeue.")
+	keyup(jump);
+	keyup(forward);
+	keyup(left);
+	keyup(right);
+	keyup(back);
+	stop(bwattack)
+	stop(bwdefense)
+	stop(bwdrop)
+	stop(bwfirstrush)
+	stop(bwgotogen)
+	stop(bwhit)
+	stop(bwlookmid)
+	stop(bwpurchase)
+	stop(bwpvp)
+	stop(bwrc)
+	stop(bwstucktimer)
+	stop(bwteammate)
+	stop(bwtimer)
+	stop(classicaddons)
+	stop(classichit)
+	stop(classicmovement)
+	stop(classicpvpbot)
+	wait(1000ms);
+	exec("command.txt","command")
+	stop;
+endif;
+
 
 //Maps to dodge.
 
@@ -516,12 +549,6 @@ ifcontains(%CHATCLEAN%,"You are currently playing on Kubo");
 endif;
 
 ifcontains(%CHATCLEAN%,"You are currently playing on Raze");
-    wait(100ms)
-	@#bridgemap = 0;
-	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
-endif;
-
-ifcontains(%CHATCLEAN%,"You are currently playing on Invasion");
     wait(100ms)
 	@#bridgemap = 0;
 	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")

@@ -12,7 +12,7 @@ A Bedwars Bot made for Hypixel, compatibility with Fours and Dreams modes. Has r
 
 # Discord Server
 ### We now have a discord server! If you want to get help, suggest ideas, or collaborate with others, join here:
-### discord.gg/sunsi
+### https://discord.gg/sunsi
 
 # Getting Started
 ### Video Tutorial (Credit: Toprak1337): https://youtu.be/O_39pO7w1F8

@@ -337,6 +337,103 @@ ifcontains(%CHATCLEAN%,"%@&yourign% has joined");
     echo("/map")
 endif;
 
+// Broken maps
+
+// Paradox is only in specific cases where you enter pvp, you fall down and get stuck sometimes
+ifcontains(%CHATCLEAN%,"You are currently playing on Paradox");
+    wait(100ms)
+	log("&f[&cBW&f] This is an broken map. Will requeue.")
+	keyup(jump);
+	keyup(forward);
+	keyup(left);
+	keyup(right);
+	keyup(back);
+	stop(bwattack)
+	stop(bwdefense)
+	stop(bwdrop)
+	stop(bwfirstrush)
+	stop(bwgotogen)
+	stop(bwhit)
+	stop(bwlookmid)
+	stop(bwpurchase)
+	stop(bwpvp)
+	stop(bwrc)
+	stop(bwstucktimer)
+	stop(bwteammate)
+	stop(bwtimer)
+	stop(classicaddons)
+	stop(classichit)
+	stop(classicmovement)
+	stop(classicpvpbot)
+	wait(1000ms);
+	exec("command.txt","command")
+	stop;
+endif;
+
+// In this map, the bot is unable to enter shop, by getting stuck outside
+ifcontains(%CHATCLEAN%,"You are currently playing on Eastwood");
+    wait(100ms)
+	log("&f[&cBW&f] This is an broken map. Will requeue.")
+	keyup(jump);
+	keyup(forward);
+	keyup(left);
+	keyup(right);
+	keyup(back);
+	stop(bwattack)
+	stop(bwdefense)
+	stop(bwdrop)
+	stop(bwfirstrush)
+	stop(bwgotogen)
+	stop(bwhit)
+	stop(bwlookmid)
+	stop(bwpurchase)
+	stop(bwpvp)
+	stop(bwrc)
+	stop(bwstucktimer)
+	stop(bwteammate)
+	stop(bwtimer)
+	stop(classicaddons)
+	stop(classichit)
+	stop(classicmovement)
+	stop(classicpvpbot)
+	wait(1000ms);
+	exec("command.txt","command")
+	stop;
+endif;
+
+// In this map, the glass pane is blocking the bot from clicking on the shop
+ifcontains(%CHATCLEAN%,"You are currently playing on Jurassic");
+    wait(100ms)
+	@#bridgemap = 0;
+	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
+	log("&f[&cBW&f] This is an broken map. Will requeue.")
+	keyup(jump);
+	keyup(forward);
+	keyup(left);
+	keyup(right);
+	keyup(back);
+	stop(bwattack)
+	stop(bwdefense)
+	stop(bwdrop)
+	stop(bwfirstrush)
+	stop(bwgotogen)
+	stop(bwhit)
+	stop(bwlookmid)
+	stop(bwpurchase)
+	stop(bwpvp)
+	stop(bwrc)
+	stop(bwstucktimer)
+	stop(bwteammate)
+	stop(bwtimer)
+	stop(classicaddons)
+	stop(classichit)
+	stop(classicmovement)
+	stop(classicpvpbot)
+	wait(1000ms);
+	exec("command.txt","command")
+	stop;
+endif;
+
 //Maps to dodge.
 
 ifcontains(%CHATCLEAN%,"You are currently playing on Dreamgrove");
@@ -370,12 +467,6 @@ ifcontains(%CHATCLEAN%,"You are currently playing on Graveship");
 endif;
 
 ifcontains(%CHATCLEAN%,"You are currently playing on Mystery");
-    wait(100ms)
-	@#bridgemap = 0;
-	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
-endif;
-
-ifcontains(%CHATCLEAN%,"You are currently playing on Jurassic");
     wait(100ms)
 	@#bridgemap = 0;
 	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")

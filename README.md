@@ -1,5 +1,10 @@
+<div align="center">
+
+<img src="https://imgur.com/wyfK8va.png" alt="Sunsi" style="width: 15%;" />
+
 # Bedwars-Bot
 A Bedwars Bot made for Hypixel, compatibility with Fours and Dreams modes. Has resource sharing, defense, failsafes, and requeuing. Coded in Macro / Keybind mod for 1.12.2 Liteloader + Forge. 
+</div>
 
 ### What's the difference between V1 & V2?
 - V1 has been tested for longer.
@@ -16,6 +21,15 @@ A Bedwars Bot made for Hypixel, compatibility with Fours and Dreams modes. Has r
 2. Open the "Dependencies" folder, and install forge 1.12.2 if not installed already. (Make sure you have the Minecraft launcher installed).
 3. Once finished installing, run the liteloader 1.12.2 installer, and click the "Extend from:" dropdown. Click 1.12.2 Forge.
 4. Open the "BedwarsAFK" (or BedwarsAFKv2 depending on the version you downloaded) folder, which is inside of the Bedwars-Bot-main folder. Open the "liteconfig" folder, the "common" folder, then the "macros" folder.
+
+#### MultiMC / Prism Launcher
+1. Begin by installing Forge 1.12.2 and LiteLoader. Navigate to "Add Instance," select version 1.12.2, choose Forge as the modloader, then confirm with "OK."
+2. Once the installation is complete, select the instance and click "Edit." Proceed to click "Install Loader," choose LiteLoader, and confirm with "OK."
+3. Thirdly, download and extract this repository.
+4. Open the "BedwarsAFK" folder you downloaded, located within the Bedwars-Bot-main directory. Inside, navigate through the "liteconfig" > "common" > "macros" folders. Open "start.txt," replace the IGN in quotes with your own, and save the file.
+5. This step is OPTIONAL, but you can also customize the play command in "Command.txt" to your preference. Setting it to "dreams" will not affect your FKDR (Final Kill Death Ratio).
+6. Launch Prism Launcher. Select your instance and click "Folder." Then, double-click on ".minecraft" and copy the "liteconfig" and "mods" folders from "BedwarsAFK" (or BedwarsAFKv2 depending on the version you downloaded) into the ".minecraft" directory.
+7. Finally, launch the game.
 
 ### 5a. CONFIGURATION FOR V1
 Open "start.txt", and replace the IGN in quotations with your IGN. Save this file.

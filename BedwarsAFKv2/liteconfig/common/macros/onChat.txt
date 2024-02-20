@@ -404,8 +404,6 @@ endif;
 // In this map, the glass pane is blocking the bot from clicking on the shop
 ifcontains(%CHATCLEAN%,"You are currently playing on Jurassic");
     wait(100ms)
-	@#bridgemap = 0;
-	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
 	log("&f[&cBW&f] This is an broken map. Will requeue.")
 	keyup(jump);
 	keyup(forward);
@@ -437,7 +435,6 @@ endif;
 // In this map, the bot gets stuck after buying items.
 ifcontains(%CHATCLEAN%,"You are currently playing on Invasion");
     wait(100ms)
-	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
 	log("&f[&cBW&f] This is an broken map. Will requeue.")
 	keyup(jump);
 	keyup(forward);

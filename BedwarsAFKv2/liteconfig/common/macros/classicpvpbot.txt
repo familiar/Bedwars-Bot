@@ -6,7 +6,7 @@ foreach(players)
     next
 do()
 
-    foreach("entities(filter:[{extends:OtherPlayerMP}])");
+    foreach("entities(filters:[{type:player}])");
         
         ifmatches(%ENTITYNAME%,"%@&opponent%")
 

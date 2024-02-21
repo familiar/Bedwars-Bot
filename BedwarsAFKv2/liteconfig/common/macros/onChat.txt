@@ -312,6 +312,12 @@ ifcontains(%CHATCLEAN%,"A disconnect occurred in your connection");
   	exec("bwstart.txt","bwstart")
 endif;
 
+ifcontains(%CHATCLEAN%,"Couldn't connect you to that server");
+    stop(all)
+	wait(1000ms)
+  	exec("bwstart.txt","bwstart")
+endif;
+
 //Initial Map Dodge
 
 ifcontains(%CHATCLEAN%,"%@&yourign% has joined");
@@ -575,11 +581,6 @@ endif;
 
 //Maps to dodge.
 
-ifcontains(%CHATCLEAN%,"You are currently playing on Dreamgrove");
-    wait(100ms)
-	@#bridgemap = 0;
-	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
-endif;
 
 
 ifcontains(%CHATCLEAN%,"You are currently playing on Lost Temple");

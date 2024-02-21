@@ -7,6 +7,13 @@ wait(100ms)
 echo("/togglechat")
 endif
 
+//Status offline check to ensure people can't make you requeue (disables private messages)
+
+ifcontains(%CHATCLEAN%,"From")
+wait(100ms)
+echo("/status offline")
+endif
+
 // Game triggers
 
 ifcontains(%CHATCLEAN%,"Protect your bed")

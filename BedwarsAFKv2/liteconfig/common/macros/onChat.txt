@@ -306,7 +306,7 @@ ifcontains(%CHATCLEAN%,"You were spawned in Limbo.");
   exec("bwstart.txt","bwstart")
 endif;
 
-ifcontains(%CHATCLEAN%,"A disconnect occured in your connection");
+ifcontains(%CHATCLEAN%,"A disconnect occurred in your connection");
     stop(all)
 	wait(1000ms)
   	exec("bwstart.txt","bwstart")

@@ -404,6 +404,8 @@ endif;
 // In this map, the glass pane is blocking the bot from clicking on the shop
 ifcontains(%CHATCLEAN%,"You are currently playing on Jurassic");
     wait(100ms)
+	@#bridgemap = 0;
+	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
 	log("&f[&cBW&f] This is an broken map. Will requeue.")
 	keyup(jump);
 	keyup(forward);
@@ -435,6 +437,7 @@ endif;
 // In this map, the bot gets stuck after buying items.
 ifcontains(%CHATCLEAN%,"You are currently playing on Invasion");
     wait(100ms)
+	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
 	log("&f[&cBW&f] This is an broken map. Will requeue.")
 	keyup(jump);
 	keyup(forward);
@@ -463,37 +466,28 @@ ifcontains(%CHATCLEAN%,"You are currently playing on Invasion");
 	stop;
 endif;
 
-// In this map, the bot gets stuck trying to buy items.
+//Maps that you can bridge in, but it is disabled due to it getting the bot stuck.
+
+//In this map, the bot may not find the shop in some cases
+ifcontains(%CHATCLEAN%,"You are currently playing on Nostalgia");
+    wait(100ms)
+	@#bridgemap = 0;
+	log("&f[&cBW&f] This is a bridge map. However it is making the bot stuck. Will not activate bridging on this map.")
+endif;
+
+//On this map, after bridging, the bot gets stuck
+ifcontains(%CHATCLEAN%,"You are currently playing on Relic");
+    wait(100ms)
+	@#bridgemap = 0;
+	log("&f[&cBW&f] This is a bridge map. However it is making the bot stuck. Will not activate bridging on this map.")
+endif;
+
+//On this map, after bridging, bot gets stuck under the stairs
 ifcontains(%CHATCLEAN%,"You are currently playing on Harvesting");
     wait(100ms)
-	log("&f[&cBW&f] This is an broken map. Will requeue.")
-	keyup(jump);
-	keyup(forward);
-	keyup(left);
-	keyup(right);
-	keyup(back);
-	stop(bwattack)
-	stop(bwdefense)
-	stop(bwdrop)
-	stop(bwfirstrush)
-	stop(bwgotogen)
-	stop(bwhit)
-	stop(bwlookmid)
-	stop(bwpurchase)
-	stop(bwpvp)
-	stop(bwrc)
-	stop(bwstucktimer)
-	stop(bwteammate)
-	stop(bwtimer)
-	stop(classicaddons)
-	stop(classichit)
-	stop(classicmovement)
-	stop(classicpvpbot)
-	wait(1000ms);
-	exec("command.txt","command")
-	stop;
+	@#bridgemap = 0;
+	log("&f[&cBW&f] This is a bridge map. However it is making the bot stuck. Will not activate bridging on this map.")
 endif;
-
 
 //Maps to dodge.
 
@@ -503,11 +497,6 @@ ifcontains(%CHATCLEAN%,"You are currently playing on Dreamgrove");
 	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
 endif;
 
-ifcontains(%CHATCLEAN%,"You are currently playing on Nostalgia");
-    wait(100ms)
-	@#bridgemap = 0;
-	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
-endif;
 
 ifcontains(%CHATCLEAN%,"You are currently playing on Lost Temple");
     wait(100ms)

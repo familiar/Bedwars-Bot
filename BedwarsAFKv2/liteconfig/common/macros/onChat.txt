@@ -352,37 +352,6 @@ endif;
 
 // Broken maps
 
-// In this map, the bot is going 1 block too far from the generator sometimes.
-ifcontains(%CHATCLEAN%,"You are currently playing on Dreamgrove");
-    wait(100ms)
-	log("&f[&cBW&f] This is an broken map. Will requeue.")
-	keyup(jump);
-	keyup(forward);
-	keyup(left);
-	keyup(right);
-	keyup(back);
-	stop(bwattack)
-	stop(bwdefense)
-	stop(bwdrop)
-	stop(bwfirstrush)
-	stop(bwgotogen)
-	stop(bwhit)
-	stop(bwlookmid)
-	stop(bwpurchase)
-	stop(bwpvp)
-	stop(bwrc)
-	stop(bwstucktimer)
-	stop(bwteammate)
-	stop(bwtimer)
-	stop(classicaddons)
-	stop(classichit)
-	stop(classicmovement)
-	stop(classicpvpbot)
-	wait(1000ms);
-	exec("command.txt","command")
-	stop;
-endif;
-
 // Paradox is only in specific cases where you enter pvp, you fall down and get stuck sometimes
 ifcontains(%CHATCLEAN%,"You are currently playing on Paradox");
     wait(100ms)

@@ -14,6 +14,13 @@ wait(100ms)
 echo("/status offline")
 endif
 
+//Guild Toggle check to ensure people can't you requeue (disables guild chat for you), this is for the people that uses main accounts while being in a guild...
+
+ifcontains(%CHATCLEAN%,"From")
+wait(100ms)
+echo("/guild toggle")
+endif
+
 // Game triggers
 
 ifcontains(%CHATCLEAN%,"Protect your bed")
@@ -306,7 +313,13 @@ ifcontains(%CHATCLEAN%,"You were spawned in Limbo.");
   exec("bwstart.txt","bwstart")
 endif;
 
-ifcontains(%CHATCLEAN%,"A disconnect occured in your connection");
+ifcontains(%CHATCLEAN%,"A disconnect occurred in your connection");
+    stop(all)
+	wait(1000ms)
+  	exec("bwstart.txt","bwstart")
+endif;
+
+ifcontains(%CHATCLEAN%,"Couldn't connect you to that server");
     stop(all)
 	wait(1000ms)
   	exec("bwstart.txt","bwstart")
@@ -544,11 +557,6 @@ endif;
 
 //Maps to dodge.
 
-ifcontains(%CHATCLEAN%,"You are currently playing on Dreamgrove");
-    wait(100ms)
-	@#bridgemap = 0;
-	log("&f[&cBW&f] This is not a bridge map. Will not activate bridging on this map.")
-endif;
 
 
 ifcontains(%CHATCLEAN%,"You are currently playing on Lost Temple");

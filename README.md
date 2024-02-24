@@ -4,10 +4,10 @@
 
 # Bedwars-Bot
 A Bedwars Bot made for Hypixel, compatibility with Fours and Dreams modes. Has resource sharing, defense, failsafes, and requeuing. Coded in Macro / Keybind mod for 1.12.2 Liteloader + Forge. 
-</div>
 
 ### Please Star This Repository!
 ![Stars](https://img.shields.io/github/stars/familiar/Bedwars-Bot)
+</div>
 
 ### What's the difference between V1 & V2?
 - V1 has been tested for longer.

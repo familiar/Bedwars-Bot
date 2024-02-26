@@ -16,7 +16,7 @@ endif
 
 //Guild Toggle check to ensure people can't you requeue (disables guild chat for you), this is for the people that uses main accounts while being in a guild...
 
-ifcontains(%CHATCLEAN%,"From")
+ifcontains(%CHATCLEAN%,"Guild >")
 wait(100ms)
 echo("/guild toggle")
 endif

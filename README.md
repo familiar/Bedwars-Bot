@@ -122,3 +122,4 @@ My bot used to average 5+ normal KDR daily from iron golem spamming. It could us
 
 ### 1/2 Months of Running:
 ![sunsi_daily_stats](https://github.com/familiar/Bedwars-Bot/assets/136278435/5045e073-0974-4bc4-916a-f8e8973b44d3)
+

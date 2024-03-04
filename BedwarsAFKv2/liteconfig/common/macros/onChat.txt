@@ -117,6 +117,7 @@ ifcontains(%CHATCLEAN%,"You have respawned!")
 	keyup(sneak)
     wait(1000ms)
     exec("bwgotogen.txt","bwgotogen")
+    exec("deathwebhook.txt","deathwebhook")
 endif
 
 //Item purchase
@@ -155,6 +156,7 @@ ifcontains(%CHATCLEAN%,"You have been eliminated!")
 	stop(classicpvpbot)
     wait(1000ms)
 	exec("Command.txt","Command")
+        exec("eliminatedwebhook.txt","eliminatedwebhook")
 endif
 
 ifcontains(%CHATCLEAN%,"Your bed was destroyed so you are a spectator!")
@@ -207,6 +209,7 @@ ifcontains(%CHATCLEAN%,"Reward Summary")
 	stop(classicpvpbot)
     wait(1000ms)
 	exec("command.txt","command")
+        exec("gameendwebhook.txt","gameendwebhook")
 endif
 
 ifcontains(%CHATCLEAN%,"Something went wrong")
@@ -355,6 +358,7 @@ ifcontains(%CHATCLEAN%,"%@&yourign% has joined");
 	@#bridgemap = 1;
 	wait(100ms)
     echo("/map")
+    exec("gamejoinwebhook.txt","gamejoinwebhook")
 endif;
 
 // Broken maps
@@ -670,6 +674,7 @@ ifcontains(%CHATCLEAN%,"Eliminate your opponents");
     exec("classicaddons.txt","classicaddons")
     exec("classichit.txt","classichit")
     exec("classicmovement.txt","classicmovement")
+    exec("gamejoinwebhook.txt","gamejoinwebhook")
     wait(1t)
 	stop;
 endif;

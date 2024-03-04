@@ -1,0 +1,6 @@
+wait(3000ms)
+&message_json = "{\"content\":\"%&message%\"}"
+&example_content = {"content": "","embeds": [{"title": "%PLAYER%","description": ":white_check_mark: Game joined!", "color": 12109567, "footer": {"text": "sunsi autogrinder! - https://github.com/familiar/Pit-Bot"},"thumbnail": {"url": "https://visage.surgeplay.com/full/512/%PLAYER%"}}]}
+setrequestheader("User-Agent","%UUID%")
+setrequestheader("Content-Type","application/json")
+&response[] = httppost(%@&webhook_url%,%&example_content%,#status)

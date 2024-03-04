@@ -30,14 +30,14 @@ A Bedwars Bot made for Hypixel, compatibility with Fours and Dreams modes. Has r
 2. Open the "Dependencies" folder, and install forge 1.12.2 if not installed already. (Make sure you have the Minecraft launcher installed).
 3. Once finished installing, run the liteloader 1.12.2 installer, and click the "Extend from:" dropdown. Click 1.12.2 Forge.
 4. Copy the "liteconfig" and "mods" folders from "BedwarsAFK" (or BedwarsAFKv2 depending on the version you downloaded) into the ".minecraft" directory.
-8. Open the Minecraft launcher. You should now have a profile in the Minecraft launcher called "release 1.12.2-LiteLoader1.12.2-1.12.2-forge..". In the top of the launcher, press on installations, then on that installation and you can run the game.
+5. Open the Minecraft launcher. You should now have a profile in the Minecraft launcher called "release 1.12.2-LiteLoader1.12.2-1.12.2-forge..". In the top of the launcher, press on installations, then on that installation and you can run the game.
 
 #### MultiMC / Prism Launcher
 1. Begin by installing Forge 1.12.2 and LiteLoader. Navigate to "Add Instance," select version 1.12.2, choose Forge as the modloader, then confirm with "OK."
 2. Once the installation is complete, select the instance and click "Edit." Proceed to click "Install Loader," choose LiteLoader, and confirm with "OK."
 3. Thirdly, download and extract this repository.
-6. Launch Prism Launcher. Select your instance and click "Folder." Then, double-click on ".minecraft" and copy the "liteconfig" and "mods" folders from "BedwarsAFK" (or BedwarsAFKv2 depending on the version you downloaded) into the ".minecraft" directory.
-7. Finally, launch the game.
+4. Launch Prism Launcher. Select your instance and click "Folder." Then, double-click on ".minecraft" and copy the "liteconfig" and "mods" folders from "BedwarsAFK" (or BedwarsAFKv2 depending on the version you downloaded) into the ".minecraft" directory.
+5. Finally, launch the game.
 
 ### 5a. CONFIGURATION FOR V1
 Open "start.txt", and replace the IGN in quotations with your IGN. Save this file.
@@ -48,9 +48,10 @@ Open "config.txt", and read through it. Replace the shop slots based on your own
 ![inventorysetup](https://github.com/familiar/Bedwars-Bot/assets/136278435/852b8003-5717-457b-bd15-8837511a3a27)
    
 6. This is OPTIONAL, but you can also open "command.txt" and replace the Bedwars play command with the one you want to queue. If you set it to dreams, your FKDR will not be affected.
-7. Open the Minecraft launcher. You should now have a profile in the Minecraft launcher called "release 1.12.2-LiteLoader1.12.2-1.12.2-forge..". In the top of the launcher, press on installations, then on that installation.
-8. Press on "Browser" for the game directory, and select the "BedwarsAFK" (or BedwarsAFKv2 depending on the version you downloaded) folder, which is inside of the Bedwars-Bot-main folder.
-9. Click save, and then run the game.
+7. This is OPTIONAL, but you can also open "config.txt" and put your own discord webhook url at "WEBHOOK_URL". This will send information using a discord webhook to your discord server.
+8. Open the Minecraft launcher. You should now have a profile in the Minecraft launcher called "release 1.12.2-LiteLoader1.12.2-1.12.2-forge..". In the top of the launcher, press on installations, then on that installation.
+9. Press on "Browser" for the game directory, and select the "BedwarsAFK" (or BedwarsAFKv2 depending on the version you downloaded) folder, which is inside of the Bedwars-Bot-main folder.
+10. Click save, and then run the game.
 
 # In-game Setup:
 

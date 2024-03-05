@@ -132,6 +132,10 @@ ifcontains(%CHATCLEAN%,"You purchased Iron Sword")
 	log(%@#ironsword%)
 endif
 
+ifcontains(%CHATCLEAN%,"BED DESTRUCTION > Your bed")
+	exec("beddestroyedwebhook.txt","beddestroyedwebhook")
+endif
+
 // Other failsafes
 
 ifcontains(%CHATCLEAN%,"You have been eliminated!")

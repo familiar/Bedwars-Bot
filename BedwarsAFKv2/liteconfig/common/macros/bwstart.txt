@@ -24,5 +24,6 @@ wait(1t)
 log("")
 wait(100t)
 
+exec("botstartwebhook.txt","botstartwebhook")
 exec("command.txt","command")
 wait(25t)

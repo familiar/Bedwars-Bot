@@ -122,6 +122,7 @@ looks(%@#realyaw%,0,0.4);
 wait(500ms)
 if(%@#bridgemap% == 1)
 	log("&f[&cBW&f] This is a bridge map. Will bridge on this map.")
+	exec("bridgestartwebhook.txt","bridgestartwebhook")
 
   //Once at gen, goes out to start bridging
   keydown(right)
@@ -194,3 +195,4 @@ endif;
 
 exec("bwrc.txt","bwrc")
 exec("bwtimer.txt","bwtimer")
+exec("bridgestopwebhook.txt","bridgestopwebhook")

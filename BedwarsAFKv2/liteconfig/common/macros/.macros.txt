@@ -247,6 +247,7 @@ script.warn.permissions.enabled=0
 
 # KEY_EQUALS
 Macro[13].Macro=$${stop(all)}$$
+Macro[13].Macro=$${exec(botstopwebhook.txt,botstopwebhook)}$$
 
 # KEY_UP
 Macro[200].Macro=$${$$<bwstart.txt>}$$

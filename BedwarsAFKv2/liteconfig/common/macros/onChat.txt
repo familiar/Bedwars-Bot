@@ -181,11 +181,16 @@ ifcontains(%CHATCLEAN%,"Your bed was destroyed so you are a spectator!")
 	exec("Command.txt","Command")
 endif
 
+//With Hypixel's new system, you gain tokens whenever you win a minigame. Admins have confirmed this won't be changing anytime soon.
+
+ifcontains(%CHATCLEAN%,"tokens! (Win)")
+	wait(200ms)	
+	exec("screenshot.txt","screenshot")
+endif
+
 ifcontains(%CHATCLEAN%,"Reward Summary")
 	echo("gg")
-	wait(100ms)
-	exec("screenshot.txt","screenshot")
-	wait(100ms)
+	wait(300ms)
 	log("&f[&cBW&f] Game Ended. Requeueing.")
     stop(bwafk)
 	stop(bwattack)

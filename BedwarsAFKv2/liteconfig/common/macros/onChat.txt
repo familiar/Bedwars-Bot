@@ -192,6 +192,7 @@ endif
 ifcontains(%CHATCLEAN%,"tokens! (Win)")
 	wait(200ms)	
 	exec("screenshot.txt","screenshot")
+	exec("gamewinwebhook.txt","gamewinwebhook")
 endif
 
 ifcontains(%CHATCLEAN%,"Reward Summary")
@@ -218,7 +219,6 @@ ifcontains(%CHATCLEAN%,"Reward Summary")
 	stop(classicpvpbot)
     wait(1000ms)
 	exec("command.txt","command")
-        exec("gameendwebhook.txt","gameendwebhook")
 endif
 
 ifcontains(%CHATCLEAN%,"Something went wrong")

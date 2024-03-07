@@ -2,6 +2,9 @@
 // User Config // 
 // ---------------- //
 
+//Put your Discord webhook url in between the quotes
+@&webhook_url = "WEBHOOK_URL";
+
 //Set the shop slot based on what your item is at
 @#blocksslot = 19;
 @#dreamdefenderslot = 23;

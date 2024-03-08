@@ -13,6 +13,13 @@ foreach(teams);
     next;
     if(&currentlocation == "Lobby");
     stop(bwstart)
+	
+	if(%@#tipping% == 1)
+	log("&f[&cBW&f] You have tipping enabled. Disable this in user config if you don't want it.")
+	echo("/tipall")
+	wait(40t)
+	endif;
+	
     if(%@#nicking% == 1)
     log("&f[&cBW&f] You have nicking enabled. Changing your nick. Disable this in user config if you don't want it.")
     echo("/nick random")

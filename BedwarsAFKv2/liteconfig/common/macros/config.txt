@@ -13,6 +13,10 @@
 //Set this to 1 if you have ++ and want to use it, 0 if your don't have ++
 @#nicking = 0;
 
+//Tipping feature - the bot will run /tipall every time it joins the lobby
+//Set this to 1 if you want to use it, 0 if you don't.
+@#tipping = 1;
+
 // ---------------- //
 // IGNORE, BOT CONFIG // 
 // ---------------- //

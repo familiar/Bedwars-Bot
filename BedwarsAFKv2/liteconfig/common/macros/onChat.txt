@@ -154,7 +154,7 @@ ifcontains(%CHATCLEAN%,"You have been eliminated!")
 	stop(classicmovement)
 	stop(classicpvpbot)
     wait(1000ms)
-	exec("Command.txt","Command")
+	exec("command.txt","Command")
 endif
 
 ifcontains(%CHATCLEAN%,"Your bed was destroyed so you are a spectator!")
@@ -178,7 +178,7 @@ ifcontains(%CHATCLEAN%,"Your bed was destroyed so you are a spectator!")
 	stop(classicmovement)
 	stop(classicpvpbot)
     wait(1000ms)
-	exec("Command.txt","Command")
+	exec("command.txt","Command")
 endif
 
 //With Hypixel's new system, you gain tokens whenever you win a minigame. Admins have confirmed this won't be changing anytime soon.

@@ -2,7 +2,7 @@
 
 <img src="https://imgur.com/wyfK8va.png" alt="Sunsi" style="width: 15%;" />
 
-# Bedwars-Bot
+# Bedwars-Bot (DEPRECATED)
 A Bedwars Bot made for Hypixel, compatibility with Fours and Dreams modes. Has resource sharing, defense, failsafes, and requeuing. Coded in Macro / Keybind mod for 1.12.2 Liteloader + Forge. 
 
 ### Please ⭐ this Repository (If you do use my bot)!
@@ -115,7 +115,6 @@ P.S: I ran it 24/7. It can basically go infinitely without a ban. I stopped runn
 
 # Stats
 My bot used to average 5+ normal KDR daily from iron golem spamming. It could usually survive for a while before dying:
-
 
 ### Couple of days - 1 Week of Running:
 ![MONTHLY](https://github.com/familiar/Bedwars-Bot/assets/136278435/fe13b261-5ed0-4e70-ae58-e41d55a8dfb4)
